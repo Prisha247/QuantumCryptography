@@ -2,7 +2,7 @@
 ####### Changes made here will not effect demo site
 
 languageCode = "en-us"
-title = "I am cool"
+title = "I am cooler"
 baseURL = "https://example.com/"
 theme = "hugo-html5up-alpha"
 disqusShortname = ""
