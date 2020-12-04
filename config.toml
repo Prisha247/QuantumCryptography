@@ -2,14 +2,14 @@
 ####### Changes made here will not effect demo site
 
 languageCode = "en-us"
-title = "Alpha by HTML5 UP"
+title = "I am cool"
 baseURL = "/"
 theme = "hugo-html5up-alpha"
 disqusShortname = ""
 publishDir = "docs"
 
 [params]
-  description = "Another fine responsive site template freebie by HTML5 UP."
+  description = "No fine responsive site template freebie by HTML5 UP."
   images = ["images/pic01.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
