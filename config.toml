@@ -2,8 +2,8 @@
 ####### Changes made here will not effect demo site
 
 languageCode = "en-us"
-title = "I am cooler"
-baseURL = ""
+title = "I am a cooler"
+baseURL = "https://prisha247.github.io/QuantumCryptography/"
 theme = "hugo-html5up-alpha"
 disqusShortname = ""
 publishDir = "docs"
