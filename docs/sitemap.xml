@@ -3,99 +3,99 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://example.com/elements/text/</loc>
+    <loc>/elements/text/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/elements/lists/</loc>
+    <loc>/elements/lists/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/elements/table/</loc>
+    <loc>/elements/table/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/elements/buttons/</loc>
+    <loc>/elements/buttons/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/elements/form/</loc>
+    <loc>/elements/form/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/elements/image/</loc>
+    <loc>/elements/image/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/</loc>
+    <loc>/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog/</loc>
+    <loc>/blog/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog/page-bundle-example/</loc>
+    <loc>/blog/page-bundle-example/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/tag1/</loc>
+    <loc>/tags/tag1/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/tag2/</loc>
+    <loc>/tags/tag2/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog/post2/</loc>
+    <loc>/blog/post2/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog/post4/</loc>
+    <loc>/blog/post4/</loc>
     <lastmod>2019-04-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog/post3/</loc>
+    <loc>/blog/post3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/contact/</loc>
+    <loc>/contact/</loc>
     <lastmod>2019-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/generic/</loc>
+    <loc>/generic/</loc>
     <lastmod>2019-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/blog/post/</loc>
+    <loc>/blog/post/</loc>
     <lastmod>2012-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://example.com/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/elements/</loc>
+    <loc>/elements/</loc>
   </url>
   
   <url>
-    <loc>https://example.com/blog/post1/</loc>
+    <loc>/blog/post1/</loc>
   </url>
   
 </urlset>
