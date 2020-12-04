@@ -3,7 +3,7 @@
 
 languageCode = "en-us"
 title = "I am cool"
-baseURL = "/"
+baseURL = "https://example.com"
 theme = "hugo-html5up-alpha"
 disqusShortname = ""
 publishDir = "docs"
