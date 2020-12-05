@@ -2,14 +2,14 @@
 ####### Changes made here will not effect demo site
 
 languageCode = "en-us"
-title = "I am a cooler"
+title = "RSA Analysis"
 baseURL = "https://prisha247.github.io/QuantumCryptography/"
 theme = "hugo-html5up-alpha"
 disqusShortname = ""
 publishDir = "docs"
 
 [params]
-  description = "No fine responsive site template freebie by HTML5 UP."
+  description = "A Study into RSA"
   images = ["images/pic01.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
@@ -17,15 +17,15 @@ publishDir = "docs"
   mainSections = ["blog"]
 
 ### Footer Social Media Links ###
-[[params.share]]
-title = "facebook"
-icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
-link = "https://www.facebook.com/"
+# [[params.share]]
+# title = "facebook"
+# icon = "fa-facebook-f" # fontawesome icons https://fontawesome.com/icons?d=gallery&s=brands
+# link = "https://www.facebook.com/"
 
-[[params.share]]
-title = "twitter"
-icon = "fa-twitter"
-link = "https://twitter.com/"
+# [[params.share]]
+# title = "twitter"
+# icon = "fa-twitter"
+# link = "https://twitter.com/"
 
 [[params.share]]
 title = "linkedin"
@@ -51,9 +51,9 @@ link = "https://www.linkedin.com"
     url = "/elements/"
     weight = 30
   [[menu.main]]
-    identifier = "blog"
-    name = "Blog"
-    url = "/blog/"
+    identifier = "Theorems and Proofs"
+    name = "Theorems and Proofs"
+    url = "/proofs/"
     weight = 40
   [[menu.main]]
     identifier = "submenu"
