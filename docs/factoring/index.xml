@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Math Behind RSA on RSA Analysis</title>
+    <link>https://prisha247.github.io/QuantumCryptography/factoring/</link>
+    <description>Recent content in Math Behind RSA on RSA Analysis</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://prisha247.github.io/QuantumCryptography/factoring/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Math Behind the RSA Algorithm</title>
+      <link>https://prisha247.github.io/QuantumCryptography/factoring/description/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/factoring/description/</guid>
+      <description>this is where we will explain the deeper math behind the algorithm.
+here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.
+ How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i did  Future Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
+    </item>
+    
+  </channel>
+</rss>

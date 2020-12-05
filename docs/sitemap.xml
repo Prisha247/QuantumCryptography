@@ -7,7 +7,15 @@
   </url>
   
   <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factor/text/</loc>
+  </url>
+  
+  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/lists/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factor/lists/</loc>
   </url>
   
   <url>
@@ -15,7 +23,19 @@
   </url>
   
   <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factor/table/</loc>
+  </url>
+  
+  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/buttons/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factor/buttons/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factoring/description/</loc>
   </url>
   
   <url>
@@ -23,21 +43,29 @@
   </url>
   
   <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factor/form/</loc>
+  </url>
+  
+  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/image/</loc>
   </url>
   
   <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factor/image/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/page-bundle-example/</loc>
+    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/blog/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/blog/page-bundle-example/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
@@ -57,23 +85,23 @@
   </url>
   
   <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/blog/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/blog/post2/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/blog/post4/</loc>
-    <lastmod>2019-04-11T00:00:00+00:00</lastmod>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post2/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/blog/post3/</loc>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post3/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/contact/</loc>
-    <lastmod>2019-02-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -82,7 +110,7 @@
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/blog/post/</loc>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post/</loc>
     <lastmod>2012-02-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -91,11 +119,23 @@
   </url>
   
   <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post1/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/contact/</loc>
+  </url>
+  
+  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/</loc>
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/blog/post1/</loc>
+    <loc>https://prisha247.github.io/QuantumCryptography/factor/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/factoring/</loc>
   </url>
   
 </urlset>

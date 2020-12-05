@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tag1 on I am a cooler</title>
+    <title>tag1 on RSA Analysis</title>
     <link>https://prisha247.github.io/QuantumCryptography/tags/tag1/</link>
-    <description>Recent content in tag1 on I am a cooler</description>
+    <description>Recent content in tag1 on RSA Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://prisha247.github.io/QuantumCryptography/tags/tag1/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Page Bundle Example</title>
-      <link>https://prisha247.github.io/QuantumCryptography/blog/page-bundle-example/</link>
+      <link>https://prisha247.github.io/QuantumCryptography/proofs/page-bundle-example/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://prisha247.github.io/QuantumCryptography/blog/page-bundle-example/</guid>
+      <guid>https://prisha247.github.io/QuantumCryptography/proofs/page-bundle-example/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dui nec dui commodo auctor non eu mauris. Duis varius finibus vestibulum. Praesent aliquam, erat sed dictum feugiat, velit erat iaculis elit, eget iaculis ex libero ac sapien. Sed maximus ut lectus et varius. Nullam posuere velit vitae est consectetur porttitor. Vestibulum tempor felis ante, nec volutpat risus vestibulum ac. Mauris at finibus felis, eu placerat arcu. Sed nec semper nunc.</description>
-    </item>
-    
-    <item>
-      <title>Contact Prisha</title>
-      <link>https://prisha247.github.io/QuantumCryptography/contact/</link>
-      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/contact/</guid>
-      <description>          </description>
     </item>
     
     <item>
