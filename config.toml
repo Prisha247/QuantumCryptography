@@ -9,7 +9,7 @@ disqusShortname = ""
 publishDir = "docs"
 
 [params]
-  description = "No fine responsive site template freebie by HTML5 UP."
+  description = "Hello."
   images = ["images/pic01.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
