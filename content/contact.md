@@ -1,8 +1,7 @@
 ---
-Title: "Contact Prisha"
-description: "Tell us what you think about our little operation."
-date: "2019-02-06T00:00:00"
-tags: ["tag1","tag2"]
+Title: "Contact Us"
+description: "Would you like to learn more about quantum cryptography? Feel free to reach out to the Prisha, Rishita, or Andrew!"
+tags: ["https://www.linkedin.com/in/rishita-sarin/"]
 ## Size param refers to the css class for the <section> tag
 ## Opions are: xsmall, small, medium, large, xlarge, max
 ## Default is 'auto'
