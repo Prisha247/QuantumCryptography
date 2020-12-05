@@ -2,20 +2,20 @@
 banner:
   enable: true
   image: #default is 'images/banner.jpg'
-  title: "Alpha"
+  title: "A Study into RSA"
   content: "" # Change this if you want something other then the site description
   buttons:
-    - title: "Sign Up"
+    - title: "Get Started"
       link: "#"
       class: "primary"
-    - title: "Learn More"
+    - title: "About Us"
       link: "#"
 
 ### Highlight ###
 highlight:
   enable: true
-  header: "Introducing the ultimate mobile app <br /> for doing stuff with your phone"
-  content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc ornare<br /> adipiscing nunc adipiscing. Condimentum turpis massa."
+  header: "Study one of the most popular cryptographic algorithms <br /> and how it can be hacked"
+  content: "This in-depth analysis of RSA, its features, and its vulnerabilities <br /> is critical for keeping people secure when communicating on the internet."
   image: "images/pic01.jpg"
 
 ### Features ###
@@ -45,12 +45,12 @@ features:
 blog:
   enable: true
   # Leave header text blank to remove entire <section>
-  header: "Recent Posts"
+  header: "Theorems and Proofs"
   buttonText: "Read More"
   postCount: 2
 
 ### Call to Action ###
-cta:
-  enable: true
-  header: "Sign up for beta access"
-  content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc."
+# cta:
+#   enable: true
+#   header: "Sign up for beta access"
+#   content: "Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc."
