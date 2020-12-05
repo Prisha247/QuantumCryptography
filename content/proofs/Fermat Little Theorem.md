@@ -1,5 +1,5 @@
 +++
-title = 'Augue lorem primis vestibulum'
+title = 'Fermat Little Theorem'
 slug = 'post3'
 image = 'images/pic02.jpg'
 date = "2019-04-07T00:00:00"
