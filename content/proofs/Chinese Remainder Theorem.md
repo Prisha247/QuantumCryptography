@@ -6,23 +6,30 @@ image = 'images/pic03.jpg'
 disableComments = true
 +++
 
-The G
-Solve modular arithmetic systems of equations as if the equations were independent.
-Condition: all divisors (e.g. m in $$x \equiv y\ (\bmod m)$$ ) must be relatively prime.
+The Chinese Remainder Theorem (CRT) can help solve systems of equations for modular arithmetic equations. For example, we will use CRT to solve the below problem:
 
-Consider the equation x≅2 (mod 3) and x≅1 (mod 4).
+$$ x \equiv 2\ (\bmod 3)$$
+$$ x \equiv 1\ (\bmod 4)$$
+$$ x \equiv 3\ (\bmod 5)$$
 
-3 and 4 are relatively prime, so this equation can be solved using CRT.
+With CRT, we can solve this system of equations as if they were three independent equations. Consider the solution for x to be in the following form:
 
-To split this equation into multiple parts, consider a solution x to be in the form of x≅4a + 3b (mod c). The variable a is used to solve x≅2 (mod 3) and b is used to solve x≅1 (mod 4).
+$$ x \equiv 4 \cdot 5 \cdot a + 3 \cdot 5 \cdot b + 3 \cdot 4 \cdot c\ (\bmod d) $$
 
-We multiply a by 4 so that changing the value of a only changes what x is congruent to mod 3. 
+_Note: this theorem only works when all of the divisors (e.g. $m$ in $x \equiv y\ (\bmod m)$ ) are [relatively prime](https://www.mathsisfun.com/definitions/relatively-prime.html)._
 
-Essentially, by ensuring that 4a is divisible by 4, we know that no matter what integer is used as a, 4a is zero mod 4. If there were more terms, then instead of just multiplying by 4, we would multiply by all modulo numbers other than the first number. For example, if the equation were x≅2 (mod 3), x≅1 (mod 4), and x≅3 (mod 5), a would be multiplied by 4 and 5 so that it doesn’t change x mod 4 or 5, and just x mod 3.
+What are we multiplying by, and why? Each number, $a$, $b$, and $c$, represent **independent solutions** to the first, second, and third equations, respectively. By multiplying the first number by $4$ and $5$, we're ensuring that the value of $a$ only affects $x \bmod 3$. For any integer $a$, the value $4 \cdot 5 \cdot a$ has the same remainder when divided by $4$ and $5$:
 
-Now, solve for a in the equation where 4a≅2 (mod 3). Actually finding the solution to this equation, a=2 (8≅2 (mod 3)), is quite trivial for small numbers, but it gets more complicated as the numbers for the modulo function increase. This is out of the scope of CRT, but important to note.
+$$ 4 \cdot 5 \cdot a \equiv 0\ (\bmod 4)$$
+$$ 4 \cdot 5 \cdot a \equiv 0\ (\bmod 5)$$
 
-Similarly, solve the equation 3b≅1 (mod 4) to get b=3. Now, 4a+3b = 4*2 + 3*3 = 17 = x. The final answer is x≅17 (mod 12) or x≅5 (mod 12). The final answer is mod 12 because whenever 12 is added or subtracted from x, it has the same remainder when dividing by 3 or 4. In other words, 12 is the least common multiple of 3 and 4.
+Similarly, $b$ and $c$ are multiplied by all divisors except $4$ and $5$, respectively, so that they independently only change the values of $x \bmod 4$ and $x \bmod 5$ respectively.
+
+Now, solve for $a$ in the equation where $20a \equiv 2\ (\bmod 3)$. For small numbers, this is trivial: when $a=1$, $20 \equiv 2\ (\bmod 3)$. Solving these individual equations gets more complicated as the numbers in the modulo function increase. This is out of the scope of CRT, but important to note.
+
+Similarly, solve the equation $15b \equiv 1\ (\bmod 4)$ to get $b=3$ and $12c \equiv 3\ (\bmod 5)$ to get $c=4$. Now knowing the values of $a$, $b$, and $c$, $x = 20a+15b+12c = 20 \cdot 1 + 15 \cdot 3 + 12 \cdot 4 = 113$.
+
+However, we still haven't solved for a specific value of $d$. The final answer is x≅17 (mod 12) or x≅5 (mod 12). The final answer is mod 12 because whenever 12 is added or subtracted from x, it has the same remainder when dividing by 3 or 4. In other words, 12 is the least common multiple of 3 and 4.
 
 
 $$ 1 + 1 = 2 $$

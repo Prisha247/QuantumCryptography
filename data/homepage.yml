@@ -2,14 +2,14 @@
 banner:
   enable: true
   image: #default is 'images/banner.jpg'
-  title: "A Study into RSA"
+  title: "Discrete Math meets Cryptography"
   content: "" # Change this if you want something other then the site description
   buttons:
     - title: "Get Started"
       link: "#"
       class: "primary"
     - title: "About Us"
-      link: "#"
+      link: "about/"
 
 ### Highlight ###
 highlight:
@@ -24,7 +24,7 @@ features:
   rows:
     - items:
       - title: "Magna etiam"
-        icon: "fa-bolt"
+        icon: "fa-laptop"
         accent: "accent2" #accent values are 1-8
         content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
       - title: "Ipsum dolor"
@@ -32,8 +32,8 @@ features:
         accent: "accent3" #accent values are 1-8
         content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
     - items:
-        - title: "Sed feugiat"
-          icon: "fa-cloud"
+        - title: "Mathematical Proofs"
+          icon: "fa-plus"
           accent: "accent4" #accent values are 1-8
           content: "Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros."
         - title: "Enim phasellus"
