@@ -1,39 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My Blog on RSA Analysis</title>
+    <title>Theorems and Proofs on RSA Analysis</title>
     <link>https://prisha247.github.io/QuantumCryptography/proofs/</link>
-    <description>Recent content in My Blog on RSA Analysis</description>
+    <description>Recent content in Theorems and Proofs on RSA Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://prisha247.github.io/QuantumCryptography/proofs/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Page Bundle Example</title>
-      <link>https://prisha247.github.io/QuantumCryptography/proofs/page-bundle-example/</link>
-      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/proofs/page-bundle-example/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dui nec dui commodo auctor non eu mauris. Duis varius finibus vestibulum. Praesent aliquam, erat sed dictum feugiat, velit erat iaculis elit, eget iaculis ex libero ac sapien. Sed maximus ut lectus et varius. Nullam posuere velit vitae est consectetur porttitor. Vestibulum tempor felis ante, nec volutpat risus vestibulum ac. Mauris at finibus felis, eu placerat arcu. Sed nec semper nunc.</description>
-    </item>
-    
-    <item>
-      <title>Euler Totient Theorem</title>
-      <link>https://prisha247.github.io/QuantumCryptography/proofs/totient/</link>
-      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/proofs/totient/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dui nec dui commodo auctor non eu mauris. Duis varius finibus vestibulum. Praesent aliquam, erat sed dictum feugiat, velit erat iaculis elit, eget iaculis ex libero ac sapien. Sed maximus ut lectus et varius. Nullam posuere velit vitae est consectetur porttitor. Vestibulum tempor felis ante, nec volutpat risus vestibulum ac. Mauris at finibus felis, eu placerat arcu. Sed nec semper nunc.</description>
-    </item>
-    
-    <item>
-      <title>first post</title>
-      <link>https://prisha247.github.io/QuantumCryptography/proofs/post/</link>
-      <pubDate>Mon, 06 Feb 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/proofs/post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dui nec dui commodo auctor non eu mauris. Duis varius finibus vestibulum. Praesent aliquam, erat sed dictum feugiat, velit erat iaculis elit, eget iaculis ex libero ac sapien. Sed maximus ut lectus et varius. Nullam posuere velit vitae est consectetur porttitor. Vestibulum tempor felis ante, nec volutpat risus vestibulum ac. Mauris at finibus felis, eu placerat arcu. Sed nec semper nunc.</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://prisha247.github.io/QuantumCryptography/proofs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Chinese Remainder Theorem</title>
       <link>https://prisha247.github.io/QuantumCryptography/proofs/crt/</link>
@@ -43,6 +15,16 @@
       <description>The Chinese Remainder Theorem (CRT) can help solve systems of equations for modular arithmetic equations. For example, we will use CRT to solve the below problem:
 $$ x \equiv 2\ (\bmod 3)$$ $$ x \equiv 1\ (\bmod 4)$$ $$ x \equiv 3\ (\bmod 5)$$
 With CRT, we can solve this system of equations as if they were three independent equations. Consider the solution for x to be in the following form:</description>
+    </item>
+    
+    <item>
+      <title>Euler Totient Theorem</title>
+      <link>https://prisha247.github.io/QuantumCryptography/proofs/post2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/proofs/post2/</guid>
+      <description>Euler’s Totient Function (mentioned as the phi function in the RSA Algorithm page) measures the &amp;ldquo;breakability of a number&amp;rdquo;. The phi function serves to calculate the number of coprimes of the product of two prime numbers, and is therefore used in the RSA algorithm to generate encryption keys (e). The greater the phi number, the more possibilities of unique encryption keys.
+Suppose p and q are prime numbers. The phi function will provide the number of values which are prime relative to the product of p and q by taking the product of (p-1) and (q-1).</description>
     </item>
     
     <item>
