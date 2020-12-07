@@ -28,7 +28,6 @@ Now, solve for $a$ in the equation where $20a \equiv 2\ (\bmod 3)$. For small nu
 
 Similarly, solve the equation $15b \equiv 1\ (\bmod 4)$ to get $b=3$ and $12c \equiv 3\ (\bmod 5)$ to get $c=4$. Now knowing the values of $a$, $b$, and $c$, $x = 20a+15b+12c = 20 \cdot 1 + 15 \cdot 3 + 12 \cdot 4 = 113$.
 
-However, we still haven't solved for a specific value of $d$. The final answer is x≅17 (mod 12) or x≅5 (mod 12). The final answer is mod 12 because whenever 12 is added or subtracted from x, it has the same remainder when dividing by 3 or 4. In other words, 12 is the least common multiple of 3 and 4.
+However, we still haven't solved for a specific value of $d$. The remainder of $x \bmod 3$ repeats every time $x$ is incremented by $3$. Similarly, the remainder when divided by $4$ and $5$ repeat every multiple of $4$ and $5$, respectively. All three modulus values repeat when $x$ is incremented by the greatest common factor of the divisors, or $60$. The final answer is $x \equiv 113\ (\bmod 60)$, or more simplified:
 
-
-$$ 1 + 1 = 2 $$
+$$x \equiv 53\ (\bmod 60)$$
