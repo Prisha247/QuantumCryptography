@@ -52,9 +52,9 @@ link = "https://www.linkedin.com"
     url = "/elements/"
     weight = 30
   [[menu.main]]
-    identifier = "factor"
-    name = "Factor"
-    url = "/factor/"
+    identifier = "factoring"
+    name = "Factoring"
+    url = "/factoring/"
     weight = 40
   [[menu.main]]
     identifier = "Theorems and Proofs"
