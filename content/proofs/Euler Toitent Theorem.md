@@ -1,11 +1,25 @@
 +++
 title = 'Euler Totient Theorem'
 slug = 'post2'
-image = 'images/pic04.jpg'
-date = "2019-04-18T00:00:00"
-description = 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.'
+description = 'How does the Totient Theorem help create encryption keys?'
 disableComments = true
 +++
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet dui nec dui commodo auctor non eu mauris. Duis varius finibus vestibulum. Praesent aliquam, erat sed dictum feugiat, velit erat iaculis elit, eget iaculis ex libero ac sapien. Sed maximus ut lectus et varius. Nullam posuere velit vitae est consectetur porttitor. Vestibulum tempor felis ante, nec volutpat risus vestibulum ac. Mauris at finibus felis, eu placerat arcu. Sed nec semper nunc. Proin eget mollis felis. Donec fermentum lectus non metus elementum, dignissim ornare felis congue. In rhoncus vehicula nibh, ac imperdiet dolor tincidunt sit amet.
+Euler’s Totient Function (mentioned as the phi function in the RSA Algorithm page) measures the "breakability of a number". The phi function serves to calculate the number of coprimes of the product of two prime numbers, and is therefore used in the RSA algorithm to generate encryption keys (e). The greater the phi number, the more possibilities of unique encryption keys. 
 
-Nullam commodo, diam nec finibus ultrices, odio enim tempus risus, quis dapibus ex ligula non erat. In sed lectus id massa fermentum euismod fringilla vel ligula. Quisque tincidunt tortor non ante scelerisque convallis ut vitae nunc. Mauris id consectetur sapien, et vulputate turpis. Nulla et diam urna. Duis varius, metus sit amet mollis gravida, felis turpis sodales nulla, id dapibus lacus est ac felis. Cras porttitor orci sit amet lorem scelerisque laoreet. Sed non mi et velit bibendum efficitur ut et mauris. Curabitur sem nisl, condimentum suscipit magna sit amet, vehicula ultricies purus. Phasellus blandit ultrices ante, eget blandit turpis fringilla et. Nam commodo volutpat semper.
+Suppose p and q are prime numbers. The phi function will provide the number of values which are prime relative to the product of p and q by taking the product of (p-1) and (q-1). 
+
+Below is an example of the Totient Theorem in action.
+
+We have two prime numbers p and q.
+$$ p = 5 $$
+$$ q = 7 $$
+
+The product of these prime numbers is as follows.
+$$ N = p \cdot q = 5 \cdot 7 = 35 $$
+
+To calculate the number of coprimes of N, we use the phi function.
+$$ phi function = (p-1)\cdot (q-1) = (4) \cdot (6) = 24 $$
+
+
+
+
