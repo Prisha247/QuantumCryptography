@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+
+<title>Fermat Little Theorem | RSA Analysis</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="/QuantumCryptography/style.css" /></head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+<header id="header">
+    <h1>A Study into RSA</h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="https://prisha247.github.io/QuantumCryptography/">Home</a></li>
+            <li>
+                <a href="#" class="icon solid fa-angle-down">Layouts</a>
+                <ul><li><a href="/QuantumCryptography/generic/">Generic</a></li><li><a href="/QuantumCryptography/contact/">Contact</a></li><li><a href="/QuantumCryptography/elements/">Elements</a></li><li><a href="/QuantumCryptography/factor/">Factor</a></li><li><a href="/QuantumCryptography/proofs/">Theorems and Proofs</a></li><li>
+                            <a href="#">Submenu</a>
+                            <ul><li><a href="#">Option One</a></li><li><a href="#">Option Two</a></li><li><a href="#">Option Three</a></li><li><a href="#">Option Four</a></li></ul>
+                        </li></ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
+</header><section id="main" class="container ">
+  <header>
+    <h2>Fermat Little Theorem</h2>
+    
+  </header>
+  <div class="box">
+    
+    <h2 id="description">Description</h2>
+<p>Fermat&rsquo;s Little Theorem, also known as Euler&rsquo;s Little Theorem, is an equation that involves modular equations with exponentiation, similar to the exponentiation done in RSA. More specifically, the theorem is as follows:</p>
+<p>$$a^p \equiv a\ (\bmod p)$$</p>
+<p>More specifically, $a$ can be any integer, and $p$ can be any <strong>prime number</strong>.</p>
+<h3 id="corollary">Corollary</h3>
+<p>Dividing both sides by $a$ produces this corollary. Both this form and the above form can come in handy when solving modular arithmetic equations.</p>
+<p>$$a^{p-1} \equiv 1\ (\bmod p)$$</p>
+<h2 id="proof">Proof</h2>
+<p>This proof can be done many ways, but one of the simplest ones involves using the binomial theorem and induction, and can prove the above equation for all positive values $a \geq 0$.</p>
+<h3 id="base-case">Base Case</h3>
+<p>Consider the case where $a = 0$. The theorem can be expressed as follows:</p>
+<p>$$0^{p} \equiv 0\ (\bmod p)$$</p>
+<p>We know that for all values of $p \neq 0$, $0^p = 0$. Therefore, for all prime numbers $p$, $0^p = 0 \equiv 0\ (\bmod p)$</p>
+<h3 id="induction">Induction</h3>
+<p>Given that $a$ works in this proof, we want to prove that the $a+1$ case works. The $a+1$ case can be represented as the expression below.</p>
+<p>$$(a+1)^p \equiv a+1\ (\bmod p)$$</p>
+<h4 id="binomial-expansion">Binomial Expansion</h4>
+<p>Expanding the left side of the equation is key for solving this proof. By the binomial theorem, the left side can be expanded as follows:</p>
+<p>$$(a+1)^p = \sum_{i=0}^p {p \choose i} a^i 1^{p-i}$$</p>
+<p>This may look like nothing at first. However, there is something important to note: almost all of the terms in the summation are divisible by $p$. In the term ${p \choose i}$, $p$ is always in the numerator. Because $p$ is prime, the only way to &ldquo;cancel out&rdquo; this $p$ is to have $p$ in the denominator, which only happens when $i=0$ (${p \choose 0} = \frac{p!}{0!(p-0)!}$) and $i=p$ (${p \choose p} = \frac{p!}{p!(p-p)!}$). When a term is divisible by $p$, it is equivalent to $0 \bmod p$, and the term can be ignored. Removing all but the two terms from the summation $i=0$ and $i=p$ gives the following output:</p>
+<p>$$(a+1)^p \equiv {p \choose 0} a^0 + {p \choose p} a^p\ (\bmod p)$$</p>
+<p>Since ${p \choose 0} = {p \choose p} = 1$, the equation can be further simplified as following:</p>
+<p>$$(a+1)^p \equiv 1 + a^p\ (\bmod p)$$</p>
+<h4 id="inductive-step">Inductive Step</h4>
+<p>Using induction, we can assume that $a^p \equiv a\ (\bmod p)$. Substituting this into the equation derived above reveals the following result:</p>
+<p>$$(a+1)^p \equiv a + 1\ (\bmod p)$$</p>
+<p>This is, in fact, the $a+1$ statement we wanted to prove given that $a$ is true. By induction, this means that all integers $a \geq 0$ work for this theorem, and $a^p \equiv a\ (\bmod p)$.</p>
+
+    
+
+
+  </div>
+  
+
+            </section>
+<footer id="footer">
+    <ul class="icons">
+        
+            <li><a href="https://www.linkedin.com" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+        
+    </ul>
+    <ul class="copyright">
+        
+        <li>© Untitled. All rights reserved.</li>
+        
+        
+        <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+        
+        
+        <li>Hugo Port: <a href="https://nelsonroberto.com/">Nelson/Roberto</a></li>
+        
+    </ul>
+</footer>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']]
+    }
+});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></div>
+<script src="https://prisha247.github.io/QuantumCryptography/js/jquery.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/jquery.dropotron.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/jquery.scrollex.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/browser.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/breakpoints.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/util.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/main.js"></script></body>
+</html>

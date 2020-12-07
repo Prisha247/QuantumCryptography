@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+
+<title>Chinese Remainder Theorem | RSA Analysis</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="/QuantumCryptography/style.css" /></head>
+    <body class="is-preload">
+        <div id="page-wrapper">
+<header id="header">
+    <h1>A Study into RSA</h1>
+    <nav id="nav">
+        <ul>
+            <li><a href="https://prisha247.github.io/QuantumCryptography/">Home</a></li>
+            <li>
+                <a href="#" class="icon solid fa-angle-down">Layouts</a>
+                <ul><li><a href="/QuantumCryptography/generic/">Generic</a></li><li><a href="/QuantumCryptography/contact/">Contact</a></li><li><a href="/QuantumCryptography/elements/">Elements</a></li><li><a href="/QuantumCryptography/factor/">Factor</a></li><li><a href="/QuantumCryptography/proofs/">Theorems and Proofs</a></li><li>
+                            <a href="#">Submenu</a>
+                            <ul><li><a href="#">Option One</a></li><li><a href="#">Option Two</a></li><li><a href="#">Option Three</a></li><li><a href="#">Option Four</a></li></ul>
+                        </li></ul>
+            </li>
+            
+            
+        </ul>
+    </nav>
+</header><section id="main" class="container ">
+  <header>
+    <h2>Chinese Remainder Theorem</h2>
+    
+  </header>
+  <div class="box">
+    
+    <p>The Chinese Remainder Theorem (CRT) can help solve systems of equations for modular arithmetic equations. For example, we will use CRT to solve the below problem:</p>
+<p>$$ x \equiv 2\ (\bmod 3)$$
+$$ x \equiv 1\ (\bmod 4)$$
+$$ x \equiv 3\ (\bmod 5)$$</p>
+<p>With CRT, we can solve this system of equations as if they were three independent equations. Consider the solution for x to be in the following form:</p>
+<p>$$ x \equiv 4 \cdot 5 \cdot a + 3 \cdot 5 \cdot b + 3 \cdot 4 \cdot c\ (\bmod d) $$</p>
+<p><em>Note: this theorem only works when all of the divisors (e.g. $m$ in $x \equiv y\ (\bmod m)$ ) are <a href="https://www.mathsisfun.com/definitions/relatively-prime.html">relatively prime</a>.</em></p>
+<p>What are we multiplying by, and why? Each number, $a$, $b$, and $c$, represent <strong>independent solutions</strong> to the first, second, and third equations, respectively. By multiplying the first number by $4$ and $5$, we&rsquo;re ensuring that the value of $a$ only affects $x \bmod 3$. For any integer $a$, the value $4 \cdot 5 \cdot a$ has the same remainder when divided by $4$ and $5$:</p>
+<p>$$ 4 \cdot 5 \cdot a \equiv 0\ (\bmod 4)$$
+$$ 4 \cdot 5 \cdot a \equiv 0\ (\bmod 5)$$</p>
+<p>Similarly, $b$ and $c$ are multiplied by all divisors except $4$ and $5$, respectively, so that they independently only change the values of $x \bmod 4$ and $x \bmod 5$ respectively.</p>
+<p>Now, solve for $a$ in the equation where $20a \equiv 2\ (\bmod 3)$. For small numbers, this is trivial: when $a=1$, $20 \equiv 2\ (\bmod 3)$. Solving these individual equations gets more complicated as the numbers in the modulo function increase. This is out of the scope of CRT, but important to note.</p>
+<p>Similarly, solve the equation $15b \equiv 1\ (\bmod 4)$ to get $b=3$ and $12c \equiv 3\ (\bmod 5)$ to get $c=4$. Now knowing the values of $a$, $b$, and $c$, $x = 20a+15b+12c = 20 \cdot 1 + 15 \cdot 3 + 12 \cdot 4 = 113$.</p>
+<p>However, we still haven&rsquo;t solved for a specific value of $d$. The final answer is x≅17 (mod 12) or x≅5 (mod 12). The final answer is mod 12 because whenever 12 is added or subtracted from x, it has the same remainder when dividing by 3 or 4. In other words, 12 is the least common multiple of 3 and 4.</p>
+<p>$$ 1 + 1 = 2 $$</p>
+
+    
+
+
+  </div>
+  
+
+            </section>
+<footer id="footer">
+    <ul class="icons">
+        
+            <li><a href="https://www.linkedin.com" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
+        
+    </ul>
+    <ul class="copyright">
+        
+        <li>© Untitled. All rights reserved.</li>
+        
+        
+        <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+        
+        
+        <li>Hugo Port: <a href="https://nelsonroberto.com/">Nelson/Roberto</a></li>
+        
+    </ul>
+</footer>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\[','\]']]
+    }
+});
+</script>
+
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></div>
+<script src="https://prisha247.github.io/QuantumCryptography/js/jquery.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/jquery.dropotron.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/jquery.scrollex.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/browser.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/breakpoints.min.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/util.js"></script>
+<script src="https://prisha247.github.io/QuantumCryptography/js/main.js"></script></body>
+</html>
