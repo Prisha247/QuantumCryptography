@@ -14,7 +14,10 @@ image: 'images/rsa.png'
   {{< /subheader >}}
   {{< subheader >}}
   ### How Can Factoring Break the Algorithm?
-  add more description, and pictures, and quotes/equations from the reading i did
+  RSA’s public key consists of the modulus n (which we know is the product of two large primes) and the encryption exponent $e$. The private key is the decryption exponent d. Recall that e and d are inverses mod φ (n). Knowing φ (n) and n is equivalent to knowing the factors of n.
+
+  One attack on RSA is to try to factor the modulus n. If we could factor n, we could calculate φ ( ) n and (by using the extended Euclidean algorithm) determine d.
+
   {{< /subheader >}}
   {{< subheader >}}
   ### Future Steps

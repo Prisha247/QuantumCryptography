@@ -8,41 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://prisha247.github.io/QuantumCryptography/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Text</title>
-      <link>https://prisha247.github.io/QuantumCryptography/elements/text/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/elements/text/</guid>
-      <description>Text This is bold and this is strong. This is italic and this is emphasized. This is superscript text and this is subscript text. This is underlined and this is code: for (;;) { ... }. Finally, this is a link.
- Heading with a Subtitle Lorem ipsum dolor sit amet nullam id egestas urna aliquam Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet.</description>
-    </item>
-    
-    <item>
-      <title>Text</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factor/text/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/factor/text/</guid>
-      <description>Text This is bold and this is strong. This is italic and this is emphasized. This is superscript text and this is subscript text. This is underlined and this is code: for (;;) { ... }. Finally, this is a link.
- Heading with a Subtitle Lorem ipsum dolor sit amet nullam id egestas urna aliquam Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet.</description>
-    </item>
-    
-    <item>
       <title>Lists</title>
       <link>https://prisha247.github.io/QuantumCryptography/elements/lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/lists/</guid>
-      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions PrimaryDefaultAlt SmallSmallSmall PrimaryDefaultAlt PrimarySmall DefaultSmall </description>
-    </item>
-    
-    <item>
-      <title>Lists</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factor/lists/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/factor/lists/</guid>
-      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions PrimaryDefaultAlt SmallSmallSmall PrimaryDefaultAlt PrimarySmall DefaultSmall </description>
+      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions Primary Default Alt  Small Small Small  Primary Default Alt  Primary Small  Default Small  </description>
     </item>
     
     <item>
@@ -55,41 +26,23 @@
     </item>
     
     <item>
-      <title>Table</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factor/table/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/factor/table/</guid>
-      <description>Table Default    NAME DESCRIPTION PRICE     Item 1 Ante turpis integer aliquet porttitor. 29.99   Item 2 Vis ac commodo adipiscing arcu aliquet. 19.99   Item 3 Morbi faucibus arcu accumsan lorem. 29.99   Item 4 Vitae integer tempus condimentum. 19.99   Item 5 Ante turpis integer aliquet porttitor. 29.99     100.00    </description>
-    </item>
-    
-    <item>
       <title>Buttons</title>
       <link>https://prisha247.github.io/QuantumCryptography/elements/buttons/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/buttons/</guid>
-      <description>Buttons PRIMARYDEFAULT LARGEDEFAULTSMALL FITFIT FIT &amp;#43; SMALLFIT &amp;#43; SMALL ICONICON PRIMARYDEFAULT </description>
-    </item>
-    
-    <item>
-      <title>Buttons</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factor/buttons/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/factor/buttons/</guid>
-      <description>Buttons PRIMARYDEFAULT LARGEDEFAULTSMALL FITFIT FIT &amp;#43; SMALLFIT &amp;#43; SMALL ICONICON PRIMARYDEFAULT </description>
+      <description>Buttons PRIMARY DEFAULT  LARGE DEFAULT SMALL  FIT FIT  FIT &amp;#43; SMALL FIT &amp;#43; SMALL  ICON ICON  PRIMARY DEFAULT  </description>
     </item>
     
     <item>
       <title>Math Behind the RSA Algorithm</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factoring/description/</link>
+      <link>https://prisha247.github.io/QuantumCryptography/elements/text/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://prisha247.github.io/QuantumCryptography/factoring/description/</guid>
-      <description>this is where we will explain the deeper math behind the algorithm.
+      <guid>https://prisha247.github.io/QuantumCryptography/elements/text/</guid>
+      <description>Math Behind The RSA Algorithm this is where we will explain the deeper math behind the algorithm.
 here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.
-How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i didFuture Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
+ How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i did   Future Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
     </item>
     
     <item>
@@ -98,16 +51,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/form/</guid>
-      <description>Form - Category -ManufacturingShippingAdministrationHuman ResourcesLowNormalHighEmail me a copyI am a human   </description>
-    </item>
-    
-    <item>
-      <title>Form</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factor/form/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/factor/form/</guid>
-      <description>Form - Category -ManufacturingShippingAdministrationHuman ResourcesLowNormalHighEmail me a copyI am a human   </description>
+      <description>Form   - Category - Manufacturing Shipping Administration Human Resources   Low  Normal  High  Email me a copy  I am a human               </description>
     </item>
     
     <item>
@@ -116,16 +60,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/image/</guid>
-      <description>Image Fit  Gallery  Left &amp;amp; Right Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
-    </item>
-    
-    <item>
-      <title>Image</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factor/image/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/factor/image/</guid>
-      <description>Image Fit  Gallery  Left &amp;amp; Right Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
+      <description>Image Fit  Gallery         Left &amp;amp; Right  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
     </item>
     
     <item>
@@ -135,6 +70,15 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       
       <guid>https://prisha247.github.io/QuantumCryptography/generic/</guid>
       <description>This is a subheading Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://prisha247.github.io/QuantumCryptography/proofs/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/proofs/post/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -164,7 +108,7 @@ With CRT, we can solve this system of equations as if they were three independen
       
       <guid>https://prisha247.github.io/QuantumCryptography/contact/</guid>
       <description>Send us a message if you would like to learn more about quantum cryptography!
- </description>
+          </description>
     </item>
     
     <item>
@@ -187,6 +131,16 @@ Suppose p and q are prime numbers. The phi function will provide the number of v
 $$a^p \equiv a\ (\bmod p)$$
 More specifically, $a$ can be any integer, and $p$ can be any prime number.
 Corollary Dividing both sides by $a$ produces this corollary. Both this form and the above form can come in handy when solving modular arithmetic equations.</description>
+    </item>
+    
+    <item>
+      <title>Math Behind RSA</title>
+      <link>https://prisha247.github.io/QuantumCryptography/factoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/factoring/</guid>
+      <description>Math Behind The RSA Algorithm RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
+here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.</description>
     </item>
     
   </channel>

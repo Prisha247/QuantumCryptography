@@ -3,19 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/elements/text/</loc>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factor/text/</loc>
-  </url>
-  
-  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/lists/</loc>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factor/lists/</loc>
   </url>
   
   <url>
@@ -23,19 +11,11 @@
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factor/table/</loc>
-  </url>
-  
-  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/buttons/</loc>
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factor/buttons/</loc>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factoring/description/</loc>
+    <loc>https://prisha247.github.io/QuantumCryptography/elements/text/</loc>
   </url>
   
   <url>
@@ -43,15 +23,7 @@
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factor/form/</loc>
-  </url>
-  
-  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/image/</loc>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factor/image/</loc>
   </url>
   
   <url>
@@ -80,6 +52,10 @@
   </url>
   
   <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post/</loc>
+  </url>
+  
+  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/about/</loc>
   </url>
   
@@ -96,10 +72,6 @@
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/elements/</loc>
-  </url>
-  
-  <url>
     <loc>https://prisha247.github.io/QuantumCryptography/proofs/post2/</loc>
   </url>
   
@@ -108,7 +80,7 @@
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/factor/</loc>
+    <loc>https://prisha247.github.io/QuantumCryptography/elements/</loc>
   </url>
   
   <url>
