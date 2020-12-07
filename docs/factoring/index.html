@@ -17,7 +17,7 @@
             <li><a href="https://prisha247.github.io/QuantumCryptography/">Home</a></li>
             <li>
                 <a href="#" class="icon solid fa-angle-down">Layouts</a>
-                <ul><li><a href="/QuantumCryptography/generic/">Generic</a></li><li><a href="/QuantumCryptography/contact/">Contact</a></li><li><a href="/QuantumCryptography/elements/">Elements</a></li><li><a href="/QuantumCryptography/factor/">Factor</a></li><li><a href="/QuantumCryptography/proofs/">Theorems and Proofs</a></li><li>
+                <ul><li><a href="/QuantumCryptography/generic/">Generic</a></li><li><a href="/QuantumCryptography/contact/">Contact</a></li><li><a href="/QuantumCryptography/elements/">Elements</a></li><li><a href="/QuantumCryptography/factoring/">Factoring</a></li><li><a href="/QuantumCryptography/proofs/">Theorems and Proofs</a></li><li>
                             <a href="#">Submenu</a>
                             <ul><li><a href="#">Option One</a></li><li><a href="#">Option Two</a></li><li><a href="#">Option Three</a></li><li><a href="#">Option Four</a></li></ul>
                         </li></ul>
@@ -27,29 +27,40 @@
         </ul>
     </nav>
 </header><section id="main" class="container ">
-
   <header>
     <h2>Math Behind RSA</h2>
+    
   </header>
-  <div class="row">
-      
-          <div class="col-6 col-12-narrower">
-              <section class="box special">
-                  
-                  <h3>Math Behind the RSA Algorithm</h3>
-                  
-                  
-                  <p>this is where we will explain the deeper math behind the algorithm.
-here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.
-How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i didFuture Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&rsquo;s algorithm.</p>
-                  
-                  <ul class="actions special">
-                      <li><a href="https://prisha247.github.io/QuantumCryptography/factoring/description/" class="button alt">Read More </a></li>
-                  </ul>
-              </section>
-          </div>
-      
+  <div class="box">
+    
+    <span class="image featured"><img src="/QuantumCryptography/images/rsa.png" alt="" /></span>
+    
+    <div class="row">
+  
+  <header>
+	<h3 id="math-behind-the-rsa-algorithm">Math Behind The RSA Algorithm</h3>
+<p>RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:</p>
+<p>here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand. <em>ADD AN EXAMPLE</em></p>
+
+</header>
+  <header>
+	<h3 id="how-can-factoring-break-the-algorithm">How Can Factoring Break the Algorithm?</h3>
+<p>RSA’s public key consists of the modulus n (which we know is the product of two large primes) and the encryption exponent $e$. The private key is the decryption exponent d. Recall that e and d are inverses mod φ (n). Knowing φ (n) and n is equivalent to knowing the factors of n.</p>
+<p>One attack on RSA is to try to factor the modulus n. If we could factor n, we could calculate φ ( ) n and (by using the extended Euclidean algorithm) determine d.</p>
+
+</header>
+  <header>
+	<h3 id="future-steps">Future Steps</h3>
+<p>introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&rsquo;s algorithm.
+</header>
+
+</div>
+
+    
+
+
   </div>
+  
 
             </section>
 <footer id="footer">
