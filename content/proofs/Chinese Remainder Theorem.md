@@ -1,8 +1,7 @@
 +++
 title = 'Chinese Remainder Theorem'
 description = 'How does CRT help solve modular arithmetic problems?'
-slug = 'post1'
-image = 'images/pic03.jpg'
+slug = 'crt'
 disableComments = true
 +++
 
