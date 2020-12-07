@@ -95,13 +95,8 @@
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post2/</loc>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/totient/</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -123,7 +118,7 @@
   </url>
   
   <url>
-    <loc>https://prisha247.github.io/QuantumCryptography/proofs/post1/</loc>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/crt/</loc>
   </url>
   
   <url>
@@ -132,6 +127,10 @@
   
   <url>
     <loc>https://prisha247.github.io/QuantumCryptography/elements/</loc>
+  </url>
+  
+  <url>
+    <loc>https://prisha247.github.io/QuantumCryptography/proofs/fermat-little/</loc>
   </url>
   
   <url>
