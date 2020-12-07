@@ -1,7 +1,7 @@
 +++
 title = 'Fermat Little Theorem'
 slug = 'fermat-little'
-description = 'Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.'
+description = 'How do we solve modular equations with prime number exponents?'
 disableComments = true
 +++
 
