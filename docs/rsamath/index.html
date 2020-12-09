@@ -4,7 +4,7 @@
 
 
 
-<title>Tags | RSA Analysis</title>
+<title>Math Behind RSA | RSA Analysis</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/QuantumCryptography/style.css" /></head>
@@ -27,13 +27,56 @@
         </ul>
     </nav>
 </header><section id="main" class="container ">
-
   <header>
-    <h2>Tags</h2>
+    <h2>Math Behind RSA</h2>
+    
   </header>
-  <div class="row">
-      
+  <div class="box">
+    
+    <span class="image featured"><img src="/QuantumCryptography/images/rsa.png" alt="" /></span>
+    
+    <div class="row">
+  
+  <header>
+	<h3 id="math-behind-the-rsa-algorithm">Math Behind The RSA Algorithm</h3>
+<p>RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:</p>
+<p>Pick two prime numbers p and q and take their product (N). P and q are not released to the public.
+Here, p is 2 and q is 7, thus their product (N) is 14. 
+N becomes the modulus in the encryption and decryption key, thus N is released to the public.
+Next, find $φ(N)$  (see Totient Theorem) which is (p-1) \cdot (q-1) = (1) \cdot (6) = 6.
+Choose encryption number (e) such that 1&lt; e &lt; $φ(N)$ AND e is a coprime of $N$ and $φ(N)$
+Choose decryption number (d) such that $d*e(modN)$ = 1
+The decryption key is $(d, N)$</p>
+<p>Encryption Key: (5,14)</p>
+<p>Text that needs to be encrypted: B</p>
+<p>Assign value to text. Let B equal to 2.</p>
+<p>25(mod14) = 32(mod14) = 4(mod14)</p>
+<p>4 is the encryption. Let 4 equal D.</p>
+<p>Decryption: (11,14)</p>
+<p>Text received: D</p>
+<p>Assign value to text received. Let D equal 4.</p>
+<p>411(mod14) = 4194304(mod14) = 2(mod14)</p>
+<p>2 is the decryption. 2 is equal to B.</p>
+
+</header>
+  <header>
+	<h3 id="how-can-factoring-break-the-algorithm">How Can Factoring Break the Algorithm?</h3>
+<p>RSA’s public key consists of the modulus n (which we know is the product of two large primes) and the encryption exponent $e$. The private key is the decryption exponent d. Recall that e and d are inverses mod φ (n). Knowing φ (n) and n is equivalent to knowing the factors of n.</p>
+<p>One attack on RSA is to try to factor the modulus n. If we could factor n, we could calculate φ ( ) n and (by using the extended Euclidean algorithm) determine d.</p>
+
+</header>
+  <header>
+	<h3 id="future-steps">Future Steps</h3>
+<p>introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&rsquo;s algorithm.
+</header>
+
+</div>
+
+    
+
+
   </div>
+  
 
             </section>
 <footer id="footer">

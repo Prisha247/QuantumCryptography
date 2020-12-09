@@ -37,9 +37,9 @@ link = "https://www.linkedin.com"
 [menu]
 
   [[menu.main]]
-    identifier = "generic"
-    name = "Generic"
-    url = "/generic/"
+    identifier = "quantum"
+    name = "Quantum Computing"
+    url = "/quantum/"
     weight = 10
   [[menu.main]]
     identifier = "contact"

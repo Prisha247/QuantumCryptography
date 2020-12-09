@@ -5,15 +5,14 @@
     <link>https://prisha247.github.io/QuantumCryptography/</link>
     <description>Recent content on RSA Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 06 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://prisha247.github.io/QuantumCryptography/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://prisha247.github.io/QuantumCryptography/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lists</title>
       <link>https://prisha247.github.io/QuantumCryptography/elements/lists/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/lists/</guid>
-      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions Primary Default Alt  Small Small Small  Primary Default Alt  Primary Small  Default Small  </description>
+      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions PrimaryDefaultAlt SmallSmallSmall PrimaryDefaultAlt PrimarySmall DefaultSmall </description>
     </item>
     
     <item>
@@ -31,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/buttons/</guid>
-      <description>Buttons PRIMARY DEFAULT  LARGE DEFAULT SMALL  FIT FIT  FIT &amp;#43; SMALL FIT &amp;#43; SMALL  ICON ICON  PRIMARY DEFAULT  </description>
+      <description>Buttons PRIMARYDEFAULT LARGEDEFAULTSMALL FITFIT FIT &amp;#43; SMALLFIT &amp;#43; SMALL ICONICON PRIMARYDEFAULT </description>
     </item>
     
     <item>
@@ -42,7 +41,7 @@
       <guid>https://prisha247.github.io/QuantumCryptography/elements/text/</guid>
       <description>Math Behind The RSA Algorithm this is where we will explain the deeper math behind the algorithm.
 here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.
- How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i did   Future Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
+How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i didFuture Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
     </item>
     
     <item>
@@ -51,7 +50,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/form/</guid>
-      <description>Form   - Category - Manufacturing Shipping Administration Human Resources   Low  Normal  High  Email me a copy  I am a human               </description>
+      <description>Form - Category -ManufacturingShippingAdministrationHuman ResourcesLowNormalHighEmail me a copyI am a human   </description>
     </item>
     
     <item>
@@ -60,16 +59,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/image/</guid>
-      <description>Image Fit  Gallery         Left &amp;amp; Right  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
-    </item>
-    
-    <item>
-      <title>This Is A Generic Page</title>
-      <link>https://prisha247.github.io/QuantumCryptography/generic/</link>
-      <pubDate>Wed, 06 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/generic/</guid>
-      <description>This is a subheading Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus.</description>
+      <description>Image Fit  Gallery  Left &amp;amp; Right Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
     </item>
     
     <item>
@@ -108,7 +98,7 @@ With CRT, we can solve this system of equations as if they were three independen
       
       <guid>https://prisha247.github.io/QuantumCryptography/contact/</guid>
       <description>Send us a message if you would like to learn more about quantum cryptography!
-          </description>
+ </description>
     </item>
     
     <item>
@@ -135,12 +125,21 @@ Corollary Dividing both sides by $a$ produces this corollary. Both this form and
     
     <item>
       <title>Math Behind RSA</title>
-      <link>https://prisha247.github.io/QuantumCryptography/factoring/</link>
+      <link>https://prisha247.github.io/QuantumCryptography/rsamath/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://prisha247.github.io/QuantumCryptography/factoring/</guid>
+      <guid>https://prisha247.github.io/QuantumCryptography/rsamath/</guid>
       <description>Math Behind The RSA Algorithm RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
-here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.</description>
+Pick two prime numbers p and q and take their product (N). P and q are not released to the public.</description>
+    </item>
+    
+    <item>
+      <title>Quantum Computing and the future of RSA</title>
+      <link>https://prisha247.github.io/QuantumCryptography/quantum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/quantum/</guid>
+      <description>What is Quantum Computing? Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus.</description>
     </item>
     
   </channel>
