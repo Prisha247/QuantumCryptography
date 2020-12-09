@@ -37,30 +37,41 @@ link = "https://www.linkedin.com"
 [menu]
 
   [[menu.main]]
-    identifier = "generic"
-    name = "Generic"
-    url = "/generic/"
-    weight = 10
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 20
-  [[menu.main]]
-    identifier = "elements"
-    name = "Elements"
-    url = "/elements/"
-    weight = 30
-  [[menu.main]]
     identifier = "rsamath"
     name = "RSA Math"
     url = "/rsamath/"
-    weight = 40
+    weight = 10
+
+  [[menu.main]]
+    identifier = "quantum"
+    name = "Quantum Computing"
+    url = "/quantum/"
+    weight = 20
+
   [[menu.main]]
     identifier = "Theorems and Proofs"
     name = "Theorems and Proofs"
     url = "/proofs/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 40
+
+  [[menu.main]]
+    identifier = "elements"
+    name = "Elements"
+    url = "/elements/"
+    weight = 60
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About Us"
+    url = "/about/"
     weight = 50
+  
   [[menu.main]]
     identifier = "submenu"
     name = "Submenu"
