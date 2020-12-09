@@ -52,9 +52,9 @@ link = "https://www.linkedin.com"
     url = "/elements/"
     weight = 30
   [[menu.main]]
-    identifier = "factoring"
-    name = "Factoring"
-    url = "/factoring/"
+    identifier = "rsamath"
+    name = "RSA Math"
+    url = "/rsamath/"
     weight = 40
   [[menu.main]]
     identifier = "Theorems and Proofs"
