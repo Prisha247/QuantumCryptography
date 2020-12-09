@@ -117,8 +117,8 @@ With CRT, we can solve this system of equations as if they were three independen
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/proofs/post2/</guid>
-      <description>Euler’s Totient Function (mentioned as the phi function in the RSA Algorithm page) measures the &amp;ldquo;breakability of a number&amp;rdquo;. The phi function serves to calculate the number of coprimes of the product of two prime numbers, and is therefore used in the RSA algorithm to generate encryption keys (e). The greater the phi number, the more possibilities of unique encryption keys.
-Suppose p and q are prime numbers. The phi function will provide the number of values which are prime relative to the product of p and q by taking the product of (p-1) and (q-1).</description>
+      <description>Euler’s Totient Function (mentioned as the $φ$ function in the RSA Algorithm page) measures the &amp;ldquo;breakability of a number&amp;rdquo; by calculating the number of coprimes of the product of two prime numbers, and is therefore used in the RSA algorithm to generate encryption keys (e). The greater the $φ$ number, the more possibilities of unique encryption keys.
+Suppose $p$ is a prime number. Let the $φ$ function will provide the number of values which are prime relative to the $p$.</description>
     </item>
     
     <item>
