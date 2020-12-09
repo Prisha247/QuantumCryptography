@@ -19,16 +19,24 @@ Choose decryption number (d) such that $d*e(modN)$ = 1
 The decryption key is $(d, N)$
 
 Encryption Key: (5,14)
+
 Text that needs to be encrypted: B
+
 Assign value to text. Let B equal to 2.
+
 25(mod14) = 32(mod14) = 4(mod14) 
+
 4 is the encryption. Let 4 equal D.
 
 Decryption: (11,14)
+
 Text received: D
-Assign value to text. D → 4
+
+Assign value to text received. Let D equal 4.
+
 411(mod14) = 4194304(mod14) = 2(mod14) 
-2 is the decryption. 2 is equal to B..
+
+2 is the decryption. 2 is equal to B.
 
   {{< /subheader >}}
   {{< subheader >}}
