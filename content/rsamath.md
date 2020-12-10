@@ -6,9 +6,10 @@ image: 'images/rsa.png'
 
 {{< subheadings >}}
   {{< subheader >}}
-  ### Math Behind The RSA Algorithm
+  
+### Math Behind The RSA Algorithm
 
-  RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
+RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
 
 Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.
 
@@ -33,9 +34,9 @@ Assign $q$ here: <input type="text" name=n value="" id="rsa-p"><br />
 
 Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>. 
 $N$ becomes the modulus in the encryption and decryption key, thus $N$ is released to the public.
-Next, find $\phi(N)$  (see Totient Theorem) which is (p-1) \cdot (q-1) = (1) \cdot (6) = 6.
-Choose encryption number (e) such that 1< e < $φ(N)$ AND e is a coprime of $N$ and $φ(N)$
-Choose decryption number (d) such that $d*e(modN)$ = 1
+Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1) = $<span class="p-1">$1$</span>$ \cdot $<span class="q-1">$6$</span>$ = $<span class="totient">$6$</span>.
+Choose encryption number $e$ such that $1 < e < \phi(N)$ AND $e$ is a [coprime](https://en.wikipedia.org/wiki/Coprime_integers) of $N$  (<span class="n">$14$</span>) and $\phi(N)$ $($<span class="totient">$6$</span>$)$
+Choose decryption number $(d)$ such that $de\ (\bmod N) = 1$
 The decryption key is $(d, N)$
 
 Encryption Key: (5,14)
@@ -100,6 +101,21 @@ Assign value to text received. Let D equal 4.
     else
         return false; // not prime 
   }
+  function gcd(x, y) {
+    if(x === 0 || y === 0) {
+      return 0;
+    }
+    if(x === y) {
+      return x;
+    }
+    if(x >== y) {
+      return gcd(x-y, y);
+    }
+    return gcd(x, y-x);
+  }
+  function coprime(x, y) {
+    return gcd(x, y) === 1;
+  }
 
   // function updatePQ(el) {
   //   // if(el.)
@@ -141,26 +157,29 @@ Assign value to text received. Let D equal 4.
 
   function updatePQ() {
 
-    // update p
-    var list = document.getElementsByClassName("p");
-    for (var i = 0; i < list.length; i++) {
-        updateEl(list[i], "$" + p + "$");
-    }
+    // update p and q
+    updateClass("p", p);
+    updateClass("q", q);
 
-    // update q
-    var list2 = document.getElementsByClassName("q");
-    for (var i = 0; i < list2.length; i++) {
-        updateEl(list2[i], "$" + q + "$");
-    }
+    // update p and q
+    updateClass("p-1", p-1);
+    updateClass("q-1", q-1);
 
     // update n
     n = p * q;
-    var list = document.getElementsByClassName("n");
-    for (var i = 0; i < list.length; i++) {
-        updateEl(list[i], "$" + n + "$");
-    }
+    updateClass("n", n);
+
+    // update totient
+    totient = (p-1)*(q-1);
+    updateClass("totient", totient);
   }
 
+  function updateClass(className, expr, options) {
+    var list = document.getElementsByClassName(className);
+    for (var i = 0; i < list.length; i++) {
+        updateEl(list[i], (options || "$") + expr + (options || "$"));
+    }
+  }
 
   function updateEl(el, expr) {
     el.innerHTML = expr;
