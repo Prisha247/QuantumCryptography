@@ -41,7 +41,15 @@ The decryption key is $(d, N)$
 
 Encryption Key: (5,14)
 
-Text that needs to be encrypted: B
+<form action="#">
+  <div class="row gtr-uniform">
+    <div class="col-12 col-12-xsmall">
+      Enter Encryption Text
+      <input type="text" name="Enter Encrpytion Text" onchange="refreshText()" id="enc-text" value="B" placeholder="Encrpytion Text" />
+    </div>
+  </div>
+</form>
+<div id="enc-error" color="red"></div>
 
 Assign value to text. Let B equal to 2.
 
@@ -108,7 +116,7 @@ Assign value to text received. Let D equal 4.
     if(x === y) {
       return x;
     }
-    if(x >== y) {
+    if(x >= y) {
       return gcd(x-y, y);
     }
     return gcd(x, y-x);
@@ -172,6 +180,8 @@ Assign value to text received. Let D equal 4.
     // update totient
     totient = (p-1)*(q-1);
     updateClass("totient", totient);
+
+    // update d https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
   }
 
   function updateClass(className, expr, options) {
@@ -186,5 +196,11 @@ Assign value to text received. Let D equal 4.
     MathJax.Hub.Queue(["Typeset",MathJax.Hub,el]);
   }
 
+  function refreshText() {
+    return true;
+  }
+
+  pEl.value = 2;
+  qEl.value = 7;
   validateP() && validateQ() && refreshAll();
 </script>

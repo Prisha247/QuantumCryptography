@@ -65,7 +65,15 @@ Choose encryption number $e$ such that $1 &lt; e &lt; \phi(N)$ AND $e$ is a <a h
 Choose decryption number $(d)$ such that $de\ (\bmod N) = 1$
 The decryption key is $(d, N)$</p>
 <p>Encryption Key: (5,14)</p>
-<p>Text that needs to be encrypted: B</p>
+<form action="#">
+  <div class="row gtr-uniform">
+    <div class="col-12 col-12-xsmall">
+      Enter Encryption Text
+      <input type="text" name="Enter Encrpytion Text" onchange="refreshText()" id="enc-text" value="B" placeholder="Encrpytion Text" />
+    </div>
+  </div>
+</form>
+<div id="enc-error" color="red"></div>
 <p>Assign value to text. Let B equal to 2.</p>
 <p>25(mod14) = 32(mod14) = 4(mod14)</p>
 <p>4 is the encryption. Let 4 equal D.</p>
@@ -123,7 +131,7 @@ The decryption key is $(d, N)$</p>
     if(x === y) {
       return x;
     }
-    if(x >== y) {
+    if(x >= y) {
       return gcd(x-y, y);
     }
     return gcd(x, y-x);
@@ -187,6 +195,8 @@ The decryption key is $(d, N)$</p>
     // update totient
     totient = (p-1)*(q-1);
     updateClass("totient", totient);
+
+    // update d https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
   }
 
   function updateClass(className, expr, options) {
@@ -201,6 +211,12 @@ The decryption key is $(d, N)$</p>
     MathJax.Hub.Queue(["Typeset",MathJax.Hub,el]);
   }
 
+  function refreshText() {
+    return true;
+  }
+
+  pEl.value = 2;
+  qEl.value = 7;
   validateP() && validateQ() && refreshAll();
 </script><blockquote>
 </blockquote>
