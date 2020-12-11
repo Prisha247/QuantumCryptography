@@ -9,11 +9,10 @@ image: 'images/rsa.png'
   
 ### Math Behind The RSA Algorithm
 
+RSA (Rivest, Shamir, and Adleman) Algorithm is a method of cryptography used to secure communication. 
 RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
 
 Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.
-
-
 
 Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1) = $<span class="p-1">$1$</span>$ \cdot $<span class="q-1">$6$</span>$ = $<span class="totient">$6$</span>.
 Choose encryption number $e$ such that $1 < e < \phi(N)$ AND $e$ is a [coprime](https://en.wikipedia.org/wiki/Coprime_integers) of $N$  (<span class="n">$14$</span>) and $\phi(N)$ $($<span class="totient">$6$</span>$)$
@@ -71,7 +70,7 @@ Assign value to text received. Let D equal 4.
   {{< /subheader >}}
   {{< subheader >}}
   ### Future Steps
-  introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor's algorithm.
+ The future of RSA is dependent on how efficiently one can factor to determine the prime numbers p and q explained above. Today's computers (classical computers) are not efficient enough to break the RSA algorithm in a timely manner. This is where quantum computing comes into play. Quantum computers have significantly greater speed than classical computers posing a danger to RSA and all data encrypted using RSA. Click on the Quantum Computing page to learn more!
   {{< /subheader >}}
 {{< /subheadings >}}
 
