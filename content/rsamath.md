@@ -13,11 +13,15 @@ RSA involves a public key and private key. The public key can be known to everyo
 
 Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.
 
-<!-- Assign $p$ here: <input type="text" name=n value="" id="rsa-p"><br />
-Assign $q$ here: <input type="text" name=n value="" id="rsa-p"><br />
- -->
 
-<!-- <input type="number" name="q" id="rssafrga-p" value="2" placeholder="p" /> -->
+
+Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1) = $<span class="p-1">$1$</span>$ \cdot $<span class="q-1">$6$</span>$ = $<span class="totient">$6$</span>.
+Choose encryption number $e$ such that $1 < e < \phi(N)$ AND $e$ is a [coprime](https://en.wikipedia.org/wiki/Coprime_integers) of $N$  (<span class="n">$14$</span>) and $\phi(N)$ $($<span class="totient">$6$</span>$)$
+Choose decryption number $(d)$ such that $de\ (\bmod N) = 1$
+The decryption key is $(d, N)$
+
+Encryption Key: (5,14)
+
 <form action="#">
   <div class="row gtr-uniform">
     <div class="col-6 col-12-xsmall">
@@ -29,19 +33,6 @@ Assign $q$ here: <input type="text" name=n value="" id="rsa-p"><br />
       <input type="text" name="Enter q" onchange="refreshAll()" id="rsa-q" value="7" placeholder="Enter q" />
     </div>
   </div>
-</form>
-<div id="error" color="red"></div>
-
-Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>. 
-$N$ becomes the modulus in the encryption and decryption key, thus $N$ is released to the public.
-Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1) = $<span class="p-1">$1$</span>$ \cdot $<span class="q-1">$6$</span>$ = $<span class="totient">$6$</span>.
-Choose encryption number $e$ such that $1 < e < \phi(N)$ AND $e$ is a [coprime](https://en.wikipedia.org/wiki/Coprime_integers) of $N$  (<span class="n">$14$</span>) and $\phi(N)$ $($<span class="totient">$6$</span>$)$
-Choose decryption number $(d)$ such that $de\ (\bmod N) = 1$
-The decryption key is $(d, N)$
-
-Encryption Key: (5,14)
-
-<form action="#">
   <div class="row gtr-uniform">
     <div class="col-12 col-12-xsmall">
       Enter Encryption Text
@@ -49,7 +40,10 @@ Encryption Key: (5,14)
     </div>
   </div>
 </form>
-<div id="enc-error" color="red"></div>
+<div id="error" color="red"></div>
+
+Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>. 
+<span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.
 
 Assign value to text. Let B equal to 2.
 
