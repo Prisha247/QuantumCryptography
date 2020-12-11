@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/lists/</guid>
-      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions Primary Default Alt  Small Small Small  Primary Default Alt  Primary Small  Default Small  </description>
+      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions PrimaryDefaultAlt SmallSmallSmall PrimaryDefaultAlt PrimarySmall DefaultSmall </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/buttons/</guid>
-      <description>Buttons PRIMARY DEFAULT  LARGE DEFAULT SMALL  FIT FIT  FIT &amp;#43; SMALL FIT &amp;#43; SMALL  ICON ICON  PRIMARY DEFAULT  </description>
+      <description>Buttons PRIMARYDEFAULT LARGEDEFAULTSMALL FITFIT FIT &amp;#43; SMALLFIT &amp;#43; SMALL ICONICON PRIMARYDEFAULT </description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       <guid>https://prisha247.github.io/QuantumCryptography/elements/text/</guid>
       <description>Math Behind The RSA Algorithm this is where we will explain the deeper math behind the algorithm.
 here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.
- How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i did   Future Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
+How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i didFuture Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/form/</guid>
-      <description>Form   - Category - Manufacturing Shipping Administration Human Resources   Low  Normal  High  Email me a copy  I am a human               </description>
+      <description>Form - Category -ManufacturingShippingAdministrationHuman ResourcesLowNormalHighEmail me a copyI am a human   </description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/image/</guid>
-      <description>Image Fit  Gallery         Left &amp;amp; Right  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
+      <description>Image Fit  Gallery  Left &amp;amp; Right Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
     </item>
     
     <item>
@@ -69,9 +69,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       
       <guid>https://prisha247.github.io/QuantumCryptography/about/</guid>
       <description>Meet the Team Prisha, Rishita, and Andrew are students at Olin College of Engineering. They created this website as part of their final project in Discrete Mathematics. Please feel free to reach out with any questions/comments/suggestions!
-Prisha Sadhwani Prisha is a sophomore at Olin College studying Electrical and Computer Engineering.
-Rishita Sarin Rishita is a sophomore at Olin College studying Engineering with Computing.
-Andrew Mascillaro Andrew is a sophomore at Olin College studying Electrical and Computer Engineering.</description>
+ </description>
     </item>
     
     <item>
@@ -83,16 +81,6 @@ Andrew Mascillaro Andrew is a sophomore at Olin College studying Electrical and 
       <description>The Chinese Remainder Theorem (CRT) can help solve systems of equations for modular arithmetic equations. For example, we will use CRT to solve the below problem:
 $$ x \equiv 2\ (\bmod 3)$$ $$ x \equiv 1\ (\bmod 4)$$ $$ x \equiv 3\ (\bmod 5)$$
 With CRT, we can solve this system of equations as if they were three independent equations. Consider the solution for x to be in the following form:</description>
-    </item>
-    
-    <item>
-      <title>Contact Us</title>
-      <link>https://prisha247.github.io/QuantumCryptography/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/contact/</guid>
-      <description>Send us a message if you would like to learn more about quantum cryptography!
-          </description>
     </item>
     
     <item>
