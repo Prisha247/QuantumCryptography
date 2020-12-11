@@ -42,7 +42,7 @@ features:
 blog:
   enable: true
   # Leave header text blank to remove entire <section>
-  header: "Theorems and Proofs"
+  #header: "Theorems and Proofs"
   buttonText: "Read More"
   postCount: 2
 
