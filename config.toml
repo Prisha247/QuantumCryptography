@@ -27,10 +27,10 @@ publishDir = "docs"
 # icon = "fa-twitter"
 # link = "https://twitter.com/"
 
-[[params.share]]
-title = "linkedin"
-icon = "fa-linkedin"
-link = "https://www.linkedin.com"
+#[[params.share]]
+#title = "linkedin"
+#icon = "fa-linkedin"
+#link = "https://www.linkedin.com"
 
 ### For Pages the .RelPermalink must match the menu .URL
 ### For sections the name/directory must match the menu .Identifier
