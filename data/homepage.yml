@@ -24,7 +24,7 @@ features:
       - title: "Math Behind the RSA Algorithm"
         icon: "fa-lock"
         accent: "accent2" #accent values are 1-8
-        content: "The RSA Algorithm generates encryption and decryption keys by relying on prime numbers. A piece of information, once encrypted, may only be accessed by someone who has the decryption key. This makes ou online interactions secure."
+        content: "The RSA Algorithm generates encryption and decryption keys by relying on prime numbers. A piece of information, once encrypted, may only be accessed by someone who has the decryption key. This makes your online interactions secure."
       - title: "Quantum Computing"
         icon: "fa-laptop"
         accent: "accent3" #accent values are 1-8
