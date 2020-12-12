@@ -1,6 +1,7 @@
 +++
 title = 'Euler Totient Theorem'
 slug = 'post2'
+image = "images/phi.jpg"
 description = 'How does the Totient Theorem help create encryption keys?'
 disableComments = true
 +++

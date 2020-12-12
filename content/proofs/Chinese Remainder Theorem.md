@@ -2,6 +2,7 @@
 title = 'Chinese Remainder Theorem'
 description = 'How does CRT help solve modular arithmetic problems?'
 slug = 'crt'
+image = "images/crt.jpg"
 disableComments = true
 +++
 
