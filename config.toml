@@ -10,7 +10,7 @@ publishDir = "docs"
 
 [params]
   description = "A Study into RSA"
-  images = ["images/pic01.jpg"]
+  images = ["images/homepagebg.jpg"]
   author = "Hugo Port: [Nelson/Roberto](https://nelsonroberto.com/)"
   copyright = "© Untitled. All rights reserved."
   design = "Design: [HTML5 UP](http://html5up.net/)"
@@ -65,7 +65,7 @@ publishDir = "docs"
     name = "About Us"
     url = "/about/"
     weight = 50
-  
+
   [[menu.main]]
     identifier = "submenu"
     name = "Submenu"
