@@ -23,7 +23,7 @@ features:
     - items:
       - title: "Math Behind the RSA Algorithm"
         icon: "fa-lock"
-        accent: "accent2" #accent values are 1-8
+        accent: "accent3" #accent values are 1-8
         content: "The RSA Algorithm generates encryption and decryption keys by relying on prime numbers. A piece of information, once encrypted, may only be accessed by someone who has the decryption key. This makes your online interactions secure."
       - title: "Quantum Computing"
         icon: "fa-laptop"
@@ -32,11 +32,11 @@ features:
     - items:
         - title: "Mathematical Theorems and Proofs"
           icon: "fa-plus"
-          accent: "accent4" #accent values are 1-8
+          accent: "accent3" #accent values are 1-8
           content: "The RSA Algorithm relies on several mathematical concepts which are discussed in further details on the following pages."
         - title: "Meet the Team"
           icon: "fa-users"
-          accent: "accent5" #accent values are 1-8
+          accent: "accent3" #accent values are 1-8
           content: "Prisha, Rishita, and Andrew are sophomores at Olin College with an affinity towards math. Please feel to free to contact the team to learn more about quantum cryptography."
 ### Blog ###
 blog:
