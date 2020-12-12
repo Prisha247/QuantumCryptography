@@ -6,10 +6,10 @@ image: 'images/rsa.png'
 
 {{< subheadings >}}
   {{< subheader >}}
-  
+
 ### Math Behind The RSA Algorithm
 
-RSA (Rivest, Shamir, and Adleman) Algorithm is a method of cryptography used to secure communication. 
+RSA (Rivest, Shamir, and Adleman) Algorithm is a method of cryptography used to secure communication.
 RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
 
 Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.
@@ -41,12 +41,12 @@ Encryption Key: (5,14)
 </form>
 <div id="error" color="red"></div>
 
-Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>. 
+Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>.
 <span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.
 
 Assign value to text. Let B equal to 2.
 
-25(mod14) = 32(mod14) = 4(mod14) 
+25(mod14) = 32(mod14) = 4(mod14)
 
 4 is the encryption. Let 4 equal D.
 
@@ -56,16 +56,21 @@ Text received: D
 
 Assign value to text received. Let D equal 4.
 
-411(mod14) = 4194304(mod14) = 2(mod14) 
+411(mod14) = 4194304(mod14) = 2(mod14)
 
 2 is the decryption. 2 is equal to B.
 
   {{< /subheader >}}
   {{< subheader >}}
   ### How Can Factoring Break the Algorithm?
-  RSA’s public key consists of the modulus n (which we know is the product of two large primes) and the encryption exponent $e$. The private key is the decryption exponent d. Recall that e and d are inverses mod φ (n). Knowing φ (n) and n is equivalent to knowing the factors of n.
+  
+  The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
 
-  One attack on RSA is to try to factor the modulus n. If we could factor n, we could calculate φ ( ) n and (by using the extended Euclidean algorithm) determine d.
+  Trapdoor functions are based on multiplication - which is easy to perform in one direction but next to impossible in the other
+      E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,099, it is extremely difficult to figure out what two prime numbers were multiplied to produce that number. As the prime numbers get larger, it becomes even more difficult to factor.
+
+  RSA is currently an example of a “hard” problem, because it relies on integer factorization. A user starts with a message and performs arithmetic on it that involves multiplication by a very large number (hundreds of digits long). The only way to decode the message is to find the prime factors of the resulting product. The security of RSA encryption rests on the fact that there’s no fast way to identify the prime factors of very large numbers. If you’re not the intended recipient of a message — and if you therefore lack the right key to decode it — you could search for a thousand years with the best computers and still not find the right prime factors.
+
 
   {{< /subheader >}}
   {{< subheader >}}
@@ -82,25 +87,25 @@ Assign value to text received. Let D equal 4.
 
   function prime(n) {   
     // almost copied from https://www.geeksforgeeks.org/check-a-number-is-prime-or-not-using-javascript/         
-    var i, flag = true; 
-      
-    // Getting the value form text 
-    // field using DOM 
+    var i, flag = true;
+
+    // Getting the value form text
+    // field using DOM
     n = parseInt(n) || 0;
     if(n === 0) {
       return false;
     }
-    for(i = 2; i <= n - 1; i++) 
-        if (n % i == 0) { 
-            flag = false; 
-            break; 
-        } 
-          
-        // Check and display alert message 
-    if (flag == true) 
-        return true; // prime 
+    for(i = 2; i <= n - 1; i++)
+        if (n % i == 0) {
+            flag = false;
+            break;
+        }
+
+        // Check and display alert message
+    if (flag == true)
+        return true; // prime
     else
-        return false; // not prime 
+        return false; // not prime
   }
   function gcd(x, y) {
     if(x === 0 || y === 0) {
