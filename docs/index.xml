@@ -73,6 +73,15 @@ here will be an example of the algorithm in use, possibly with an animation, to 
     </item>
     
     <item>
+      <title>Additional Resources  Bibliography</title>
+      <link>https://prisha247.github.io/QuantumCryptography/proofs/bib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/proofs/bib/</guid>
+      <description>Additional Resources + Bibliography </description>
+    </item>
+    
+    <item>
       <title>Chinese Remainder Theorem</title>
       <link>https://prisha247.github.io/QuantumCryptography/proofs/crt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -111,8 +120,8 @@ Corollary Dividing both sides by $a$ produces this corollary. Both this form and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/rsamath/</guid>
-      <description>Math Behind The RSA Algorithm RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
-Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.</description>
+      <description>Math Behind The RSA Algorithm RSA (Rivest, Shamir, and Adleman) Algorithm is a method of cryptography used to secure communication. RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:
+Pick two prime numbers $p$ and $q$ and take their product ($N$).</description>
     </item>
     
     <item>
@@ -121,7 +130,8 @@ Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/quantum/</guid>
-      <description>What is Quantum Computing? Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus.</description>
+      <description>What is Quantum Computing? “Quantum computing” is computation performed using a computing device based on the physical properties of matter at very small scale, also known as quantum mechanics
+Classical computers, like the ones we use today, function based on transistors that encode data in binary digits, also known as bits, that can only be a “1” or a “0”. Quantum computers, however, use “qubits,” where a single qubit is able to encode many more than two states.</description>
     </item>
     
   </channel>

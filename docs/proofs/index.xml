@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://prisha247.github.io/QuantumCryptography/proofs/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Additional Resources  Bibliography</title>
+      <link>https://prisha247.github.io/QuantumCryptography/proofs/bib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/proofs/bib/</guid>
+      <description>Additional Resources + Bibliography </description>
+    </item>
+    
+    <item>
       <title>Chinese Remainder Theorem</title>
       <link>https://prisha247.github.io/QuantumCryptography/proofs/crt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -34,30 +34,40 @@ Encryption Key: (5,14)
   <div class="row gtr-uniform">
     <div class="col-12 col-12-xsmall">
       Enter Encryption Text
-      <input type="text" name="Enter Encrpytion Text" onchange="refreshText()" id="enc-text" value="B" placeholder="Encrpytion Text" />
+      <input type="text" name="Enter Encrpytion Text" onchange="refreshAll()" id="rsa-t" value="B" placeholder="Encrpytion Text" />
     </div>
   </div>
 </form>
 <div id="error" color="red"></div>
 
-Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>.
+Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>.
+Additionally, the encryption text is "<span class="tStr">B</span>".
+
+The product ($N$) is $pq$, or <span class="n">$14$</span>.
+
 <span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.
 
-Assign value to text. Let B equal to 2.
+Assign value to text. Let that value be <span class="t">$2$</span>.
 
-25(mod14) = 32(mod14) = 4(mod14)
+Now $e$ equals <span class="e">$3$</span>.
+$2^5$(mod14) = 32(mod14) = 4(mod14)
+
+Now solve to get the encrypted text:
+<span class="emod"></span>
+<br>
+Here's the value for $d$:
+<span class="d"></span>
 
 4 is the encryption. Let 4 equal D.
 
-Decryption: (11,14)
+Decryption: <span class="priv-key">$(11,14)$</span>
 
-Text received: D
+Encryption received: <span class="enc"></span>
+<br>
 
-Assign value to text received. Let D equal 4.
+Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304(mod14) = 2(mod14)$</span>
 
-411(mod14) = 4194304(mod14) = 2(mod14)
-
-2 is the decryption. 2 is equal to B.
+<span class="dec">$2$</span> is the decryption, which can be converted into <span class="decStr"></span>.
 
   {{< /subheader >}}
   {{< subheader >}}
@@ -78,9 +88,13 @@ Assign value to text received. Let D equal 4.
   {{< /subheader >}}
 {{< /subheadings >}}
 
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <script type="text/javascript">
   pEl = document.getElementById("rsa-p");
   qEl = document.getElementById("rsa-q");
+  tEl = document.getElementById("rsa-t");
   p = 2;
   q = 7;
 
@@ -121,28 +135,95 @@ Assign value to text received. Let D equal 4.
   function coprime(x, y) {
     return gcd(x, y) === 1;
   }
+  function getE(N) {
+    let i = 3;
+    while (i < N) {
+      if (coprime(i, N)) {
+        return i;
+      }
+      i += 2;
+    }
+    return 0;
+  }
+  // http://umaranis.com/2018/07/12/calculate-modular-exponentiation-powermod-in-javascript-ap-n/
+  // calculates   base^exponent % modulus
+  function powerMod(base, exponent, modulus) {
+      if (modulus === 1) return 0;
+      var result = 1;
+      base = base % modulus;
+      while (exponent > 0) {
+          if (exponent % 2 === 1)  //odd number
+              result = (result * base) % modulus;
+          exponent = exponent >> 1; //divide by 2
+          base = (base * base) % modulus;
+      }
+      return result;
+  }
 
-  // function updatePQ(el) {
-  //   // if(el.)
-  // }
+  function str2int(stringInput) {
+    let output = "";
+    for (var i = 0; i < stringInput.length; i++) {
+        output += stringInput[i].charCodeAt(0).toString(2);
+    }
+    return parseInt(output, '2');
+  }
+  function int2str(intInput) {
+    let output = "";
+    while (intInput > 0) {
+      output = String.fromCharCode(intInput % 128) + output;
+      intInput = Math.floor(intInput/128);
+    }
+    return output;
+  }
+
+  // https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
+  function getD(a, m) {
+    // validate inputs
+    [a, m] = [Number(a), Number(m)]
+    if (Number.isNaN(a) || Number.isNaN(m)) {
+      return NaN // invalid input
+    }
+    a = (a % m + m) % m
+    if (!a || m < 2) {
+      return NaN // invalid input
+    }
+    // find the gcd
+    const s = []
+    let b = m
+    while(b) {
+      [a, b] = [b, a % b]
+      s.push({a, b})
+    }
+    if (a !== 1) {
+      return NaN // inverse does not exists
+    }
+    // find the inverse
+    let x = 1
+    let y = 0
+    for(let i = s.length - 2; i >= 0; --i) {
+      [x, y] = [y,  x - y * Math.floor(s[i].a / s[i].b)]
+    }
+    return (y % m + m) % m
+  }
+  
   // for loop copied from https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements
-
 
   function refreshAll() {
     if(validateP() && validateQ()) {
       document.getElementById("error").innerHTML = "";
-      updatePQ()
+      updatePQ();
+      refreshText();
     } else {
       errorEl = document.getElementById("error");
-      errorEl.innerHTML = "Error: Ensure that $p$ and $q$ are prime numbers less than 1000 <br /><br />";
+      errorEl.innerHTML = "Error: Ensure that $p$ and $q$ are prime numbers less than 100000 <br /><br />";
       MathJax.Hub.Queue(["Typeset",MathJax.Hub,errorEl]);
 
-      updatePQ();
+      // updatePQ();
     }
   }
   function validateP() {
     testP = pEl.value;
-    if(testP > 1 && testP < 1000 && prime(testP)) {
+    if(testP > 1 && testP < 100000 && prime(testP)) {
       p = testP;
       return true;
     } else {
@@ -152,7 +233,7 @@ Assign value to text received. Let D equal 4.
 
   function validateQ() {
     testQ = qEl.value;
-    if(testQ > 1 && testQ < 1000 && prime(testQ)) {
+    if(testQ > 1 && testQ < 100000 && prime(testQ)) {
       q = testQ;
       return true;
     } else {
@@ -178,6 +259,8 @@ Assign value to text received. Let D equal 4.
     totient = (p-1)*(q-1);
     updateClass("totient", totient);
 
+    e = getE(n);
+    updateClass("e", e);
     // update d https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
   }
 
@@ -194,7 +277,31 @@ Assign value to text received. Let D equal 4.
   }
 
   function refreshText() {
-    return true;
+    // tStr = tEl.value;
+    t = 4; //str2int(tStr);
+
+    updateClass("tStr", tStr, "");
+    updateClass("t", t);
+
+    enc = powerMod(t, e, totient);
+    console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
+    updateClass("emod", 
+      "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
+    );
+    updateClass("enc", enc);
+
+    d = getD(e, totient);
+    updateClass("d", d);
+
+    updateClass("priv-key", "(" + d + "," + n + ")");
+    dec = powerMod(enc, d, totient);
+    updateClass("dmod", 
+      "" + t + "^{" + d + "}\\ (\\bmod " + n + ") = " + dec
+    );
+    updateClass("dec", dec)
+
+    decStr = int2str(dec);
+    updateClass("decStr", decStr, "");
   }
 
   pEl.value = 2;

@@ -39,7 +39,8 @@
   
   <header>
 	<h3 id="math-behind-the-rsa-algorithm">Math Behind The RSA Algorithm</h3>
-<p>RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:</p>
+<p>RSA (Rivest, Shamir, and Adleman) Algorithm is a method of cryptography used to secure communication.
+RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:</p>
 <p>Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.</p>
 <p>Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1) = $<span class="p-1">$1$</span>$ \cdot $<span class="q-1">$6$</span>$ = $<span class="totient">$6$</span>.
 Choose encryption number $e$ such that $1 &lt; e &lt; \phi(N)$ AND $e$ is a <a href="https://en.wikipedia.org/wiki/Coprime_integers">coprime</a> of $N$  (<span class="n">$14$</span>) and $\phi(N)$ $($<span class="totient">$6$</span>$)$
@@ -65,7 +66,7 @@ The decryption key is $(d, N)$</p>
   </div>
 </form>
 <div id="error" color="red"></div>
-<p>Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>. 
+<p>Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>.
 <span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.</p>
 <p>Assign value to text. Let B equal to 2.</p>
 <p>25(mod14) = 32(mod14) = 4(mod14)</p>
@@ -79,13 +80,15 @@ The decryption key is $(d, N)$</p>
 </header>
   <header>
 	<h3 id="how-can-factoring-break-the-algorithm">How Can Factoring Break the Algorithm?</h3>
-<p>RSA’s public key consists of the modulus n (which we know is the product of two large primes) and the encryption exponent $e$. The private key is the decryption exponent d. Recall that e and d are inverses mod φ (n). Knowing φ (n) and n is equivalent to knowing the factors of n.</p>
-<p>One attack on RSA is to try to factor the modulus n. If we could factor n, we could calculate φ ( ) n and (by using the extended Euclidean algorithm) determine d.</p>
+<p>The security of cryptography relies on certain &ldquo;hard&rdquo; problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A &ldquo;hard&rdquo; problem should take the best computers available billions of years to solve; an &ldquo;easy&rdquo; problem is one that can be solved very quickly.</p>
+<p>Trapdoor functions are based on multiplication - which is easy to perform in one direction but next to impossible in the other
+E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,099, it is extremely difficult to figure out what two prime numbers were multiplied to produce that number. As the prime numbers get larger, it becomes even more difficult to factor.</p>
+<p>RSA is currently an example of a “hard” problem, because it relies on integer factorization. A user starts with a message and performs arithmetic on it that involves multiplication by a very large number (hundreds of digits long). The only way to decode the message is to find the prime factors of the resulting product. The security of RSA encryption rests on the fact that there’s no fast way to identify the prime factors of very large numbers. If you’re not the intended recipient of a message — and if you therefore lack the right key to decode it — you could search for a thousand years with the best computers and still not find the right prime factors.</p>
 
 </header>
   <header>
 	<h3 id="future-steps">Future Steps</h3>
-<p>introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&rsquo;s algorithm.
+<p>The future of RSA is dependent on how efficiently one can factor to determine the prime numbers p and q explained above. Today&rsquo;s computers (classical computers) are not efficient enough to break the RSA algorithm in a timely manner. This is where quantum computing comes into play. Quantum computers have significantly greater speed than classical computers posing a danger to RSA and all data encrypted using RSA. Click on the Quantum Computing page to learn more!
 </header>
 
 </div>
@@ -97,25 +100,25 @@ The decryption key is $(d, N)$</p>
 
   function prime(n) {   
     // almost copied from https://www.geeksforgeeks.org/check-a-number-is-prime-or-not-using-javascript/         
-    var i, flag = true; 
-      
-    // Getting the value form text 
-    // field using DOM 
+    var i, flag = true;
+
+    // Getting the value form text
+    // field using DOM
     n = parseInt(n) || 0;
     if(n === 0) {
       return false;
     }
-    for(i = 2; i <= n - 1; i++) 
-        if (n % i == 0) { 
-            flag = false; 
-            break; 
-        } 
-          
-        // Check and display alert message 
-    if (flag == true) 
-        return true; // prime 
+    for(i = 2; i <= n - 1; i++)
+        if (n % i == 0) {
+            flag = false;
+            break;
+        }
+
+        // Check and display alert message
+    if (flag == true)
+        return true; // prime
     else
-        return false; // not prime 
+        return false; // not prime
   }
   function gcd(x, y) {
     if(x === 0 || y === 0) {
@@ -211,8 +214,7 @@ The decryption key is $(d, N)$</p>
   pEl.value = 2;
   qEl.value = 7;
   validateP() && validateQ() && refreshAll();
-</script><blockquote>
-</blockquote>
+</script>
 
     
 
@@ -223,8 +225,6 @@ The decryption key is $(d, N)$</p>
             </section>
 <footer id="footer">
     <ul class="icons">
-        
-            <li><a href="https://www.linkedin.com" class="icon brands fa-linkedin"><span class="label">linkedin</span></a></li>
         
     </ul>
     <ul class="copyright">
