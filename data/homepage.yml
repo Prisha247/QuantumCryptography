@@ -3,7 +3,7 @@ banner:
   enable: true
   image: #default is 'images/banner.jpg'
   title: "Discrete Math meets Cryptography"
-  content: "A Study into RSA and its Breakability" 
+  content: "A Study into RSA and its Breakability"
   buttons:
     - title: "Get Started"
       link: "rsamath/"

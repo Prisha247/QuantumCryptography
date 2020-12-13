@@ -1,7 +1,6 @@
 ---
-Title: "Math Behind RSA"
-description: "the math behind the rsa algorithm, and why factoring can break it"
-image: 'images/rsa.png'
+  title: "Discrete Math meets Cryptography"
+  content: "A Study into RSA and its Breakability"
 ---
 
 {{< subheadings >}}
@@ -63,7 +62,7 @@ Assign value to text received. Let D equal 4.
   {{< /subheader >}}
   {{< subheader >}}
   ### How Can Factoring Break the Algorithm?
-  
+
   The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
 
   Trapdoor functions are based on multiplication - which is easy to perform in one direction but next to impossible in the other
