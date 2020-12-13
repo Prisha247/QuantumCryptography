@@ -205,7 +205,7 @@ Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304
     }
     return (y % m + m) % m
   }
-  
+
   // for loop copied from https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements
 
   function refreshAll() {
@@ -285,7 +285,7 @@ Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304
 
     enc = powerMod(t, e, totient);
     console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
-    updateClass("emod", 
+    updateClass("emod",
       "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
     );
     updateClass("enc", enc);
@@ -295,7 +295,7 @@ Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304
 
     updateClass("priv-key", "(" + d + "," + n + ")");
     dec = powerMod(enc, d, totient);
-    updateClass("dmod", 
+    updateClass("dmod",
       "" + t + "^{" + d + "}\\ (\\bmod " + n + ") = " + dec
     );
     updateClass("dec", dec)
