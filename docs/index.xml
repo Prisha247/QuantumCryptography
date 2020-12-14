@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/lists/</guid>
-      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions PrimaryDefaultAlt SmallSmallSmall PrimaryDefaultAlt PrimarySmall DefaultSmall </description>
+      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions Primary Default Alt  Small Small Small  Primary Default Alt  Primary Small  Default Small  </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/buttons/</guid>
-      <description>Buttons PRIMARYDEFAULT LARGEDEFAULTSMALL FITFIT FIT &amp;#43; SMALLFIT &amp;#43; SMALL ICONICON PRIMARYDEFAULT </description>
+      <description>Buttons PRIMARY DEFAULT  LARGE DEFAULT SMALL  FIT FIT  FIT &amp;#43; SMALL FIT &amp;#43; SMALL  ICON ICON  PRIMARY DEFAULT  </description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       <guid>https://prisha247.github.io/QuantumCryptography/elements/text/</guid>
       <description>Math Behind The RSA Algorithm this is where we will explain the deeper math behind the algorithm.
 here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.
-How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i didFuture Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
+ How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i did   Future Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/form/</guid>
-      <description>Form - Category -ManufacturingShippingAdministrationHuman ResourcesLowNormalHighEmail me a copyI am a human   </description>
+      <description>Form   - Category - Manufacturing Shipping Administration Human Resources   Low  Normal  High  Email me a copy  I am a human               </description>
     </item>
     
     <item>
@@ -59,17 +59,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/image/</guid>
-      <description>Image Fit  Gallery  Left &amp;amp; Right Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
-    </item>
-    
-    <item>
-      <title>About Us</title>
-      <link>https://prisha247.github.io/QuantumCryptography/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://prisha247.github.io/QuantumCryptography/about/</guid>
-      <description>Meet the Team Prisha, Rishita, and Andrew are students at Olin College of Engineering. They created this website as part of their final project in Discrete Mathematics. Please feel free to reach out with any questions/comments/suggestions!
- </description>
+      <description>Image Fit  Gallery         Left &amp;amp; Right  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
     </item>
     
     <item>
@@ -122,6 +112,16 @@ Suppose $p$ is a prime number. Let the $φ$ function will provide the number of 
 $$a^p \equiv a\ (\bmod p)$$
 More specifically, $a$ can be any integer, and $p$ can be any prime number.
 Corollary Dividing both sides by $a$ produces this corollary. Both this form and the above form can come in handy when solving modular arithmetic equations.</description>
+    </item>
+    
+    <item>
+      <title>Meet the Team</title>
+      <link>https://prisha247.github.io/QuantumCryptography/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/about/</guid>
+      <description>Prisha, Andrew, and Rishita are students at Olin College of Engineering. They created this website as part of their final project in Discrete Mathematics. Please feel free to reach out with any questions/comments/suggestions!
+          </description>
     </item>
     
     <item>

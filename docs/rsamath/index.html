@@ -44,71 +44,55 @@
   </header>
   <div class="box">
     
-    <div class="row">
-  
-  <header>
-	<h3 id="math-behind-the-rsa-algorithm">Math Behind The RSA Algorithm</h3>
+    <h3 id="math-behind-the-rsa-algorithm">Math Behind The RSA Algorithm</h3>
 <p>RSA (Rivest, Shamir, and Adleman) Algorithm is a method of cryptography used to secure communication.
 RSA involves a public key and private key. The public key can be known to everyone- it is used to encrypt messages. Messages encrypted using the public key can only be decrypted with the private key. The keys for the RSA algorithm are generated the following way:</p>
 <p>Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.</p>
-<p>Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1) = $<span class="p-1">$1$</span>$ \cdot $<span class="q-1">$6$</span>$ = $<span class="totient">$6$</span>.
-Choose encryption number $e$ such that $1 &lt; e &lt; \phi(N)$ AND $e$ is a <a href="https://en.wikipedia.org/wiki/Coprime_integers">coprime</a> of $N$  (<span class="n">$14$</span>) and $\phi(N)$ $($<span class="totient">$6$</span>$)$
+<p>Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1)$.
+Choose encryption number $e$ such that $1 &lt; e &lt; \phi (N)$ AND $e$ is a <a href="https://en.wikipedia.org/wiki/Coprime_integers">coprime</a> of $N$ and $\phi(N)$.
 Choose decryption number $(d)$ such that $de\ (\bmod N) = 1$
-The decryption key is $(d, N)$</p>
-<p>Encryption Key: (5,14)</p>
+The encrpytion key is $(e, N)$ and the decryption key is $(d, N)$.</p>
 <form action="#">
   <div class="row gtr-uniform">
     <div class="col-6 col-12-xsmall">
       Enter $p$
-      <input type="text" name="Enter p" onchange="refreshAll()" id="rsa-p" value="2" placeholder="Enter p" />
+      <input type="text" name="Enter p" onchange="refreshAll()" id="rsa-p" value="1103" placeholder="Enter p" />
     </div>
     <div class="col-6 col-12-xsmall">
       Enter $q$
-      <input type="text" name="Enter q" onchange="refreshAll()" id="rsa-q" value="7" placeholder="Enter q" />
+      <input type="text" name="Enter q" onchange="refreshAll()" id="rsa-q" value="3301" placeholder="Enter q" />
     </div>
   </div>
+  <br />
   <div class="row gtr-uniform">
     <div class="col-12 col-12-xsmall">
-      Enter Encryption Text
-      <input type="text" name="Enter Encrpytion Text" onchange="refreshAll()" id="rsa-t" value="B" placeholder="Encrpytion Text" />
+      Enter Encryption Letter
+      <input type="text" name="Enter Encrpytion Letter" onchange="refreshAll()" id="rsa-t" value="B" placeholder="Encrpytion Letter" />
     </div>
   </div>
 </form>
-<div id="error" color="red"></div>
-<p>Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>.
-Additionally, the encryption text is &ldquo;<span class="tStr">B</span>&rdquo;.</p>
-<p>The product ($N$) is $pq$, or <span class="n">$14$</span>.</p>
-<p><span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.</p>
-<p>Assign value to text. Let that value be <span class="t">$2$</span>.</p>
-<p>Now $e$ equals <span class="e">$3$</span>.
-$2^5$(mod14) = 32(mod14) = 4(mod14)</p>
+<div id="error" style="color:red;"></div>
+<p>Here, $p$ is <span class="p">__</span> and $q$ is <span class="q">__</span>.
+Additionally, the encryption text is &ldquo;<span class="tStr">__</span>&rdquo;.</p>
+<p>The product ($N$) is $pq$, or <span class="n">__</span>.</p>
+<p><span class="n">__</span> becomes the modulus in the encryption and decryption key, thus <span class="n">__</span> is released to the public.</p>
+<p>Assign value to text. Let that value be <span class="t">__</span>.</p>
+<p>Now $e$ equals <span class="e">__</span>.</p>
 <p>Now solve to get the encrypted text:
 <span class="emod"></span>
 <br>
 Here&rsquo;s the value for $d$:
 <span class="d"></span></p>
-<p>4 is the encryption. Let 4 equal D.</p>
-<p>Decryption: <span class="priv-key">$(11,14)$</span></p>
-<p>Encryption received: <span class="enc"></span>
+<p>Decryption: <span class="priv-key">__</span></p>
+<p>Encryption received: <span class="enc">__</span>
 <br></p>
-<p>Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304(mod14) = 2(mod14)$</span></p>
-<p><span class="dec">$2$</span> is the decryption, which can be converted into <span class="decStr"></span>.</p>
-
-</header>
-  <header>
-	<h3 id="how-can-factoring-break-the-algorithm">How Can Factoring Break the Algorithm?</h3>
+<p>Solve to decrypt the text using $d$: <span class="dmod">__</span></p>
+<p><span class="dec">__</span> is the decryption, which can be converted into <span class="decStr">__</span>.</p>
+<h3 id="how-can-factoring-break-the-algorithm">How Can Factoring Break the Algorithm?</h3>
 <p>The security of cryptography relies on certain &ldquo;hard&rdquo; problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A &ldquo;hard&rdquo; problem should take the best computers available billions of years to solve; an &ldquo;easy&rdquo; problem is one that can be solved very quickly.</p>
-<p>Trapdoor functions are based on multiplication - which is easy to perform in one direction but next to impossible in the other
-E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,099, it is extremely difficult to figure out what two prime numbers were multiplied to produce that number. As the prime numbers get larger, it becomes even more difficult to factor.</p>
 <p>RSA is currently an example of a “hard” problem, because it relies on integer factorization. A user starts with a message and performs arithmetic on it that involves multiplication by a very large number (hundreds of digits long). The only way to decode the message is to find the prime factors of the resulting product. The security of RSA encryption rests on the fact that there’s no fast way to identify the prime factors of very large numbers. If you’re not the intended recipient of a message — and if you therefore lack the right key to decode it — you could search for a thousand years with the best computers and still not find the right prime factors.</p>
-
-</header>
-  <header>
-	<h3 id="future-steps">Future Steps</h3>
-<p>The future of RSA is dependent on how efficiently one can factor to determine the prime numbers p and q explained above. Today&rsquo;s computers (classical computers) are not efficient enough to break the RSA algorithm in a timely manner. This is where quantum computing comes into play. Quantum computers have significantly greater speed than classical computers posing a danger to RSA and all data encrypted using RSA. Click on the Quantum Computing page to learn more!
-</header>
-
-</div>
+<h3 id="future-steps">Future Steps</h3>
+<p>The future of RSA is dependent on how efficiently one can factor to determine the prime numbers p and q explained above. Today&rsquo;s computers (classical computers) are not efficient enough to break the RSA algorithm in a timely manner. This is where quantum computing comes into play. Quantum computers have significantly greater speed than classical computers posing a danger to RSA and all data encrypted using RSA. Click on the Quantum Computing page to learn more!</p>
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
@@ -141,25 +125,38 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
     else
         return false; // not prime
   }
+  // function gcd(x, y) {
+  //   if(x === 0 || y === 0) {
+  //     return 0;
+  //   }
+  //   if(x === y) {
+  //     return x;
+  //   }
+  //   if(x >= y) {
+  //     return gcd(x-y, y);
+  //   }
+  //   return gcd(x, y-x);
+  // }
+  // https://www.w3resource.com/javascript-exercises/javascript-math-exercise-8.php
   function gcd(x, y) {
-    if(x === 0 || y === 0) {
-      return 0;
+    if ((typeof x !== 'number') || (typeof y !== 'number')) 
+      return false;
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while(y) {
+      var t = y;
+      y = x % y;
+      x = t;
     }
-    if(x === y) {
-      return x;
-    }
-    if(x >= y) {
-      return gcd(x-y, y);
-    }
-    return gcd(x, y-x);
+    return x;
   }
   function coprime(x, y) {
     return gcd(x, y) === 1;
   }
-  function getE(N) {
-    let i = 3;
-    while (i < N) {
-      if (coprime(i, N)) {
+  function getE(N, totient) {
+    i = 3;
+    while (i < totient) {
+      if (coprime(i, N) && coprime(i, totient)) {
         return i;
       }
       i += 2;
@@ -233,7 +230,6 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
     if(validateP() && validateQ()) {
       document.getElementById("error").innerHTML = "";
       updatePQ();
-      refreshText();
     } else {
       errorEl = document.getElementById("error");
       errorEl.innerHTML = "Error: Ensure that $p$ and $q$ are prime numbers less than 100000 <br /><br />";
@@ -280,9 +276,36 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
     totient = (p-1)*(q-1);
     updateClass("totient", totient);
 
-    e = getE(n);
+    // update e
+    e = getE(n, totient);
     updateClass("e", e);
     // update d https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
+
+    tStr = tEl.value;
+    t = str2int(tStr);
+
+    updateClass("tStr", tStr, "");
+    updateClass("t", t);
+
+    enc = powerMod(t, e, n);
+    console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
+    updateClass("emod",
+      "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
+    );
+    updateClass("enc", enc);
+
+    d = getD(e, totient);
+    updateClass("d", d);
+
+    updateClass("priv-key", "(" + d + "," + n + ")");
+    dec = powerMod(enc, d, n);
+    updateClass("dmod", 
+      "" + enc + "^{" + d + "}\\ (\\bmod " + n + ") = " + dec
+    );
+    updateClass("dec", dec)
+
+    decStr = int2str(dec);
+    updateClass("decStr", decStr, "");
   }
 
   function updateClass(className, expr, options) {
@@ -297,37 +320,7 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
     MathJax.Hub.Queue(["Typeset",MathJax.Hub,el]);
   }
 
-  function refreshText() {
-    // tStr = tEl.value;
-    t = 4; //str2int(tStr);
-
-    updateClass("tStr", tStr, "");
-    updateClass("t", t);
-
-    enc = powerMod(t, e, totient);
-    console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
-    updateClass("emod",
-      "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
-    );
-    updateClass("enc", enc);
-
-    d = getD(e, totient);
-    updateClass("d", d);
-
-    updateClass("priv-key", "(" + d + "," + n + ")");
-    dec = powerMod(enc, d, totient);
-    updateClass("dmod",
-      "" + t + "^{" + d + "}\\ (\\bmod " + n + ") = " + dec
-    );
-    updateClass("dec", dec)
-
-    decStr = int2str(dec);
-    updateClass("decStr", decStr, "");
-  }
-
-  pEl.value = 2;
-  qEl.value = 7;
-  validateP() && validateQ() && refreshAll();
+  refreshAll();
 </script>
 
     
