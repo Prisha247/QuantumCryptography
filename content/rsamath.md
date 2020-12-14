@@ -1,7 +1,6 @@
 ---
-Title: "Math Behind RSA"
-description: "the math behind the rsa algorithm, and why factoring can break it"
-image: 'images/rsa.png'
+  title: "Discrete Math meets Cryptography"
+  content: "A Study into RSA and its Breakability"
 ---
 
 
@@ -64,13 +63,9 @@ Solve to decrypt the text using $d$: <span class="dmod">\_\_</span>
 
 <span class="dec">\_\_</span> is the decryption, which can be converted into <span class="decStr">\_\_</span>.
 
-Note that if the encrypted and decrypted text aren't the same, it's likely that $p$ and $q$ are too small to encode the information you've sent. There are only $N$ possible values of anything $\\bmod N$, so if the encoded message (as a number) is larger than $N$, it can't be accurately encrypted.
+  ### How Can Factoring Break the Algorithm?
 
-### How Can Factoring Break the Algorithm?
-The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
-
-Trapdoor functions are based on multiplication - which is easy to perform in one direction but next to impossible in the other
-    E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,099, it is extremely difficult to figure out what two prime numbers were multiplied to produce that number. As the prime numbers get larger, it becomes even more difficult to factor.
+  The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
 
 RSA is currently an example of a “hard” problem, because it relies on integer factorization. A user starts with a message and performs arithmetic on it that involves multiplication by a very large number (hundreds of digits long). The only way to decode the message is to find the prime factors of the resulting product. The security of RSA encryption rests on the fact that there’s no fast way to identify the prime factors of very large numbers. If you’re not the intended recipient of a message — and if you therefore lack the right key to decode it — you could search for a thousand years with the best computers and still not find the right prime factors.
 
@@ -211,7 +206,7 @@ The future of RSA is dependent on how efficiently one can factor to determine th
     }
     return (y % m + m) % m
   }
-  
+
   // for loop copied from https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements
 
   function refreshAll() {
@@ -277,7 +272,7 @@ The future of RSA is dependent on how efficiently one can factor to determine th
 
     enc = powerMod(t, e, n);
     console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
-    updateClass("emod", 
+    updateClass("emod",
       "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
     );
     updateClass("enc", enc);
