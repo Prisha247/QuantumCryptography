@@ -4,8 +4,6 @@ description: "the math behind the rsa algorithm, and why factoring can break it"
 image: 'images/rsa.png'
 ---
 
-{{< subheadings >}}
-  {{< subheader >}}
 
 ### Math Behind The RSA Algorithm
 
@@ -14,44 +12,42 @@ RSA involves a public key and private key. The public key can be known to everyo
 
 Pick two prime numbers $p$ and $q$ and take their product ($N$). The numbers $p$ and $q$ are not released to the public.
 
-Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1) = $<span class="p-1">$1$</span>$ \cdot $<span class="q-1">$6$</span>$ = $<span class="totient">$6$</span>.
-Choose encryption number $e$ such that $1 < e < \phi(N)$ AND $e$ is a [coprime](https://en.wikipedia.org/wiki/Coprime_integers) of $N$  (<span class="n">$14$</span>) and $\phi(N)$ $($<span class="totient">$6$</span>$)$
+Next, find $\phi(N)$  (see Totient Theorem) which is $(p-1) (q-1)$.
+Choose encryption number $e$ such that $1 < e < \phi (N)$ AND $e$ is a [coprime](https://en.wikipedia.org/wiki/Coprime_integers) of $N$ and $\phi(N)$.
 Choose decryption number $(d)$ such that $de\ (\bmod N) = 1$
-The decryption key is $(d, N)$
-
-Encryption Key: (5,14)
+The encrpytion key is $(e, N)$ and the decryption key is $(d, N)$.
 
 <form action="#">
   <div class="row gtr-uniform">
     <div class="col-6 col-12-xsmall">
       Enter $p$
-      <input type="text" name="Enter p" onchange="refreshAll()" id="rsa-p" value="2" placeholder="Enter p" />
+      <input type="text" name="Enter p" onchange="refreshAll()" id="rsa-p" value="1103" placeholder="Enter p" />
     </div>
     <div class="col-6 col-12-xsmall">
       Enter $q$
-      <input type="text" name="Enter q" onchange="refreshAll()" id="rsa-q" value="7" placeholder="Enter q" />
+      <input type="text" name="Enter q" onchange="refreshAll()" id="rsa-q" value="3301" placeholder="Enter q" />
     </div>
   </div>
+  <br />
   <div class="row gtr-uniform">
     <div class="col-12 col-12-xsmall">
-      Enter Encryption Text
-      <input type="text" name="Enter Encrpytion Text" onchange="refreshAll()" id="rsa-t" value="B" placeholder="Encrpytion Text" />
+      Enter Encryption Letter
+      <input type="text" name="Enter Encrpytion Letter" onchange="refreshAll()" id="rsa-t" value="B" placeholder="Encrpytion Letter" />
     </div>
   </div>
 </form>
-<div id="error" color="red"></div>
+<div id="error" style="color:red;"></div>
 
-Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>.
-Additionally, the encryption text is "<span class="tStr">B</span>".
+Here, $p$ is <span class="p">\_\_</span> and $q$ is <span class="q">\_\_</span>.
+Additionally, the encryption text is "<span class="tStr">\_\_</span>".
 
-The product ($N$) is $pq$, or <span class="n">$14$</span>.
+The product ($N$) is $pq$, or <span class="n">\_\_</span>.
 
-<span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.
+<span class="n">\_\_</span> becomes the modulus in the encryption and decryption key, thus <span class="n">\_\_</span> is released to the public.
 
-Assign value to text. Let that value be <span class="t">$2$</span>.
+Assign value to text. Let that value be <span class="t">\_\_</span>.
 
-Now $e$ equals <span class="e">$3$</span>.
-$2^5$(mod14) = 32(mod14) = 4(mod14)
+Now $e$ equals <span class="e">\_\_</span>.
 
 Now solve to get the encrypted text:
 <span class="emod"></span>
@@ -59,35 +55,31 @@ Now solve to get the encrypted text:
 Here's the value for $d$:
 <span class="d"></span>
 
-4 is the encryption. Let 4 equal D.
+Decryption: <span class="priv-key">\_\_</span>
 
-Decryption: <span class="priv-key">$(11,14)$</span>
-
-Encryption received: <span class="enc"></span>
+Encryption received: <span class="enc">\_\_</span>
 <br>
 
-Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304(mod14) = 2(mod14)$</span>
+Solve to decrypt the text using $d$: <span class="dmod">\_\_</span>
 
-<span class="dec">$2$</span> is the decryption, which can be converted into <span class="decStr"></span>.
+<span class="dec">\_\_</span> is the decryption, which can be converted into <span class="decStr">\_\_</span>.
 
-  {{< /subheader >}}
-  {{< subheader >}}
-  ### How Can Factoring Break the Algorithm?
-  
-  The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
+Note that if the encrypted and decrypted text aren't the same, it's likely that $p$ and $q$ are too small to encode the information you've sent. There are only $N$ possible values of anything $\\bmod N$, so if the encoded message (as a number) is larger than $N$, it can't be accurately encrypted.
 
-  Trapdoor functions are based on multiplication - which is easy to perform in one direction but next to impossible in the other
-      E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,099, it is extremely difficult to figure out what two prime numbers were multiplied to produce that number. As the prime numbers get larger, it becomes even more difficult to factor.
+### How Can Factoring Break the Algorithm?
+The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
 
-  RSA is currently an example of a “hard” problem, because it relies on integer factorization. A user starts with a message and performs arithmetic on it that involves multiplication by a very large number (hundreds of digits long). The only way to decode the message is to find the prime factors of the resulting product. The security of RSA encryption rests on the fact that there’s no fast way to identify the prime factors of very large numbers. If you’re not the intended recipient of a message — and if you therefore lack the right key to decode it — you could search for a thousand years with the best computers and still not find the right prime factors.
+Trapdoor functions are based on multiplication - which is easy to perform in one direction but next to impossible in the other
+    E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,099, it is extremely difficult to figure out what two prime numbers were multiplied to produce that number. As the prime numbers get larger, it becomes even more difficult to factor.
+
+RSA is currently an example of a “hard” problem, because it relies on integer factorization. A user starts with a message and performs arithmetic on it that involves multiplication by a very large number (hundreds of digits long). The only way to decode the message is to find the prime factors of the resulting product. The security of RSA encryption rests on the fact that there’s no fast way to identify the prime factors of very large numbers. If you’re not the intended recipient of a message — and if you therefore lack the right key to decode it — you could search for a thousand years with the best computers and still not find the right prime factors.
 
 
-  {{< /subheader >}}
-  {{< subheader >}}
-  ### Future Steps
- The future of RSA is dependent on how efficiently one can factor to determine the prime numbers p and q explained above. Today's computers (classical computers) are not efficient enough to break the RSA algorithm in a timely manner. This is where quantum computing comes into play. Quantum computers have significantly greater speed than classical computers posing a danger to RSA and all data encrypted using RSA. Click on the Quantum Computing page to learn more!
-  {{< /subheader >}}
-{{< /subheadings >}}
+
+### Future Steps
+
+The future of RSA is dependent on how efficiently one can factor to determine the prime numbers p and q explained above. Today's computers (classical computers) are not efficient enough to break the RSA algorithm in a timely manner. This is where quantum computing comes into play. Quantum computers have significantly greater speed than classical computers posing a danger to RSA and all data encrypted using RSA. Click on the Quantum Computing page to learn more!
+
 
 <script type="text/javascript"
   src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
@@ -121,25 +113,38 @@ Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304
     else
         return false; // not prime
   }
+  // function gcd(x, y) {
+  //   if(x === 0 || y === 0) {
+  //     return 0;
+  //   }
+  //   if(x === y) {
+  //     return x;
+  //   }
+  //   if(x >= y) {
+  //     return gcd(x-y, y);
+  //   }
+  //   return gcd(x, y-x);
+  // }
+  // https://www.w3resource.com/javascript-exercises/javascript-math-exercise-8.php
   function gcd(x, y) {
-    if(x === 0 || y === 0) {
-      return 0;
+    if ((typeof x !== 'number') || (typeof y !== 'number')) 
+      return false;
+    x = Math.abs(x);
+    y = Math.abs(y);
+    while(y) {
+      var t = y;
+      y = x % y;
+      x = t;
     }
-    if(x === y) {
-      return x;
-    }
-    if(x >= y) {
-      return gcd(x-y, y);
-    }
-    return gcd(x, y-x);
+    return x;
   }
   function coprime(x, y) {
     return gcd(x, y) === 1;
   }
-  function getE(N) {
-    let i = 3;
-    while (i < N) {
-      if (coprime(i, N)) {
+  function getE(N, totient) {
+    i = 3;
+    while (i < totient) {
+      if (coprime(i, N) && coprime(i, totient)) {
         return i;
       }
       i += 2;
@@ -213,7 +218,6 @@ Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304
     if(validateP() && validateQ()) {
       document.getElementById("error").innerHTML = "";
       updatePQ();
-      refreshText();
     } else {
       errorEl = document.getElementById("error");
       errorEl.innerHTML = "Error: Ensure that $p$ and $q$ are prime numbers less than 100000 <br /><br />";
@@ -260,9 +264,36 @@ Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304
     totient = (p-1)*(q-1);
     updateClass("totient", totient);
 
-    e = getE(n);
+    // update e
+    e = getE(n, totient);
     updateClass("e", e);
     // update d https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
+
+    tStr = tEl.value;
+    t = str2int(tStr);
+
+    updateClass("tStr", tStr, "");
+    updateClass("t", t);
+
+    enc = powerMod(t, e, n);
+    console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
+    updateClass("emod", 
+      "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
+    );
+    updateClass("enc", enc);
+
+    d = getD(e, totient);
+    updateClass("d", d);
+
+    updateClass("priv-key", "(" + d + "," + n + ")");
+    dec = powerMod(enc, d, n);
+    updateClass("dmod", 
+      "" + enc + "^{" + d + "}\\ (\\bmod " + n + ") = " + dec
+    );
+    updateClass("dec", dec)
+
+    decStr = int2str(dec);
+    updateClass("decStr", decStr, "");
   }
 
   function updateClass(className, expr, options) {
@@ -277,35 +308,5 @@ Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304
     MathJax.Hub.Queue(["Typeset",MathJax.Hub,el]);
   }
 
-  function refreshText() {
-    // tStr = tEl.value;
-    t = 4; //str2int(tStr);
-
-    updateClass("tStr", tStr, "");
-    updateClass("t", t);
-
-    enc = powerMod(t, e, totient);
-    console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
-    updateClass("emod", 
-      "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
-    );
-    updateClass("enc", enc);
-
-    d = getD(e, totient);
-    updateClass("d", d);
-
-    updateClass("priv-key", "(" + d + "," + n + ")");
-    dec = powerMod(enc, d, totient);
-    updateClass("dmod", 
-      "" + t + "^{" + d + "}\\ (\\bmod " + n + ") = " + dec
-    );
-    updateClass("dec", dec)
-
-    decStr = int2str(dec);
-    updateClass("decStr", decStr, "");
-  }
-
-  pEl.value = 2;
-  qEl.value = 7;
-  validateP() && validateQ() && refreshAll();
+  refreshAll();
 </script>
