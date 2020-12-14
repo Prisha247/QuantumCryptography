@@ -1,6 +1,7 @@
 +++
 title = 'Fermat Little Theorem'
 slug = 'fermat-little'
+image = "images/flt.jpg"
 description = 'How do we solve modular equations with prime number exponents?'
 disableComments = true
 +++
