@@ -4,10 +4,20 @@
 
 
 
-<title>Math Behind RSA | RSA Analysis</title>
+<title>Discrete Math meets Cryptography | RSA Analysis</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<link rel="stylesheet" href="/QuantumCryptography/style.css" /></head>
+<link rel="stylesheet" href="/QuantumCryptography/style.css" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+</head>
     <body class="is-preload">
         <div id="page-wrapper">
 <header id="header">
@@ -22,21 +32,20 @@
                             <ul><li><a href="#">Option One</a></li><li><a href="#">Option Two</a></li><li><a href="#">Option Three</a></li><li><a href="#">Option Four</a></li></ul>
                         </li></ul>
             </li>
-
-
+            
+            
         </ul>
     </nav>
-</header><section id="main" class="container ">
+</header>
+<section id="main" class="container ">
   <header>
-    <h2>Math Behind RSA</h2>
-
+    <h2>Discrete Math meets Cryptography</h2>
+    
   </header>
   <div class="box">
-
-    <span class="image featured"><img src="/QuantumCryptography/images/rsa.png" alt="" /></span>
-
+    
     <div class="row">
-
+  
   <header>
 	<h3 id="math-behind-the-rsa-algorithm">Math Behind The RSA Algorithm</h3>
 <p>RSA (Rivest, Shamir, and Adleman) Algorithm is a method of cryptography used to secure communication.
@@ -61,21 +70,29 @@ The decryption key is $(d, N)$</p>
   <div class="row gtr-uniform">
     <div class="col-12 col-12-xsmall">
       Enter Encryption Text
-      <input type="text" name="Enter Encrpytion Text" onchange="refreshText()" id="enc-text" value="B" placeholder="Encrpytion Text" />
+      <input type="text" name="Enter Encrpytion Text" onchange="refreshAll()" id="rsa-t" value="B" placeholder="Encrpytion Text" />
     </div>
   </div>
 </form>
 <div id="error" color="red"></div>
-<p>Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>, thus their product ($N$) is <span class="n">$14$</span>.
-<span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.</p>
-<p>Assign value to text. Let B equal to 2.</p>
-<p>25(mod14) = 32(mod14) = 4(mod14)</p>
+<p>Here, $p$ is <span class="p">$2$</span> and $q$ is <span class="q">$7$</span>.
+Additionally, the encryption text is &ldquo;<span class="tStr">B</span>&rdquo;.</p>
+<p>The product ($N$) is $pq$, or <span class="n">$14$</span>.</p>
+<p><span class="n">$14$</span> becomes the modulus in the encryption and decryption key, thus <span class="n">$14$</span> is released to the public.</p>
+<p>Assign value to text. Let that value be <span class="t">$2$</span>.</p>
+<p>Now $e$ equals <span class="e">$3$</span>.
+$2^5$(mod14) = 32(mod14) = 4(mod14)</p>
+<p>Now solve to get the encrypted text:
+<span class="emod"></span>
+<br>
+Here&rsquo;s the value for $d$:
+<span class="d"></span></p>
 <p>4 is the encryption. Let 4 equal D.</p>
-<p>Decryption: (11,14)</p>
-<p>Text received: D</p>
-<p>Assign value to text received. Let D equal 4.</p>
-<p>411(mod14) = 4194304(mod14) = 2(mod14)</p>
-<p>2 is the decryption. 2 is equal to B.</p>
+<p>Decryption: <span class="priv-key">$(11,14)$</span></p>
+<p>Encryption received: <span class="enc"></span>
+<br></p>
+<p>Solve to decrypt the text using $d$: <span class="dmod">$4^{11}(mod14) = 4194304(mod14) = 2(mod14)$</span></p>
+<p><span class="dec">$2$</span> is the decryption, which can be converted into <span class="decStr"></span>.</p>
 
 </header>
   <header>
@@ -92,14 +109,18 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
 </header>
 
 </div>
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 <script type="text/javascript">
   pEl = document.getElementById("rsa-p");
   qEl = document.getElementById("rsa-q");
+  tEl = document.getElementById("rsa-t");
   p = 2;
   q = 7;
 
-  function prime(n) {
-    // almost copied from https://www.geeksforgeeks.org/check-a-number-is-prime-or-not-using-javascript/
+  function prime(n) {   
+    // almost copied from https://www.geeksforgeeks.org/check-a-number-is-prime-or-not-using-javascript/         
     var i, flag = true;
 
     // Getting the value form text
@@ -135,28 +156,95 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
   function coprime(x, y) {
     return gcd(x, y) === 1;
   }
+  function getE(N) {
+    let i = 3;
+    while (i < N) {
+      if (coprime(i, N)) {
+        return i;
+      }
+      i += 2;
+    }
+    return 0;
+  }
+  // http://umaranis.com/2018/07/12/calculate-modular-exponentiation-powermod-in-javascript-ap-n/
+  // calculates   base^exponent % modulus
+  function powerMod(base, exponent, modulus) {
+      if (modulus === 1) return 0;
+      var result = 1;
+      base = base % modulus;
+      while (exponent > 0) {
+          if (exponent % 2 === 1)  //odd number
+              result = (result * base) % modulus;
+          exponent = exponent >> 1; //divide by 2
+          base = (base * base) % modulus;
+      }
+      return result;
+  }
 
-  // function updatePQ(el) {
-  //   // if(el.)
-  // }
+  function str2int(stringInput) {
+    let output = "";
+    for (var i = 0; i < stringInput.length; i++) {
+        output += stringInput[i].charCodeAt(0).toString(2);
+    }
+    return parseInt(output, '2');
+  }
+  function int2str(intInput) {
+    let output = "";
+    while (intInput > 0) {
+      output = String.fromCharCode(intInput % 128) + output;
+      intInput = Math.floor(intInput/128);
+    }
+    return output;
+  }
+
+  // https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
+  function getD(a, m) {
+    // validate inputs
+    [a, m] = [Number(a), Number(m)]
+    if (Number.isNaN(a) || Number.isNaN(m)) {
+      return NaN // invalid input
+    }
+    a = (a % m + m) % m
+    if (!a || m < 2) {
+      return NaN // invalid input
+    }
+    // find the gcd
+    const s = []
+    let b = m
+    while(b) {
+      [a, b] = [b, a % b]
+      s.push({a, b})
+    }
+    if (a !== 1) {
+      return NaN // inverse does not exists
+    }
+    // find the inverse
+    let x = 1
+    let y = 0
+    for(let i = s.length - 2; i >= 0; --i) {
+      [x, y] = [y,  x - y * Math.floor(s[i].a / s[i].b)]
+    }
+    return (y % m + m) % m
+  }
+
   // for loop copied from https://stackoverflow.com/questions/22754315/for-loop-for-htmlcollection-elements
-
 
   function refreshAll() {
     if(validateP() && validateQ()) {
       document.getElementById("error").innerHTML = "";
-      updatePQ()
+      updatePQ();
+      refreshText();
     } else {
       errorEl = document.getElementById("error");
-      errorEl.innerHTML = "Error: Ensure that $p$ and $q$ are prime numbers less than 1000 <br /><br />";
+      errorEl.innerHTML = "Error: Ensure that $p$ and $q$ are prime numbers less than 100000 <br /><br />";
       MathJax.Hub.Queue(["Typeset",MathJax.Hub,errorEl]);
 
-      updatePQ();
+      // updatePQ();
     }
   }
   function validateP() {
     testP = pEl.value;
-    if(testP > 1 && testP < 1000 && prime(testP)) {
+    if(testP > 1 && testP < 100000 && prime(testP)) {
       p = testP;
       return true;
     } else {
@@ -166,7 +254,7 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
 
   function validateQ() {
     testQ = qEl.value;
-    if(testQ > 1 && testQ < 1000 && prime(testQ)) {
+    if(testQ > 1 && testQ < 100000 && prime(testQ)) {
       q = testQ;
       return true;
     } else {
@@ -192,6 +280,8 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
     totient = (p-1)*(q-1);
     updateClass("totient", totient);
 
+    e = getE(n);
+    updateClass("e", e);
     // update d https://stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa#23281286
   }
 
@@ -208,7 +298,31 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
   }
 
   function refreshText() {
-    return true;
+    // tStr = tEl.value;
+    t = 4; //str2int(tStr);
+
+    updateClass("tStr", tStr, "");
+    updateClass("t", t);
+
+    enc = powerMod(t, e, totient);
+    console.log("" + t + "^" + e + "\\ (\\bmod " + totient + ") = " + enc);
+    updateClass("emod",
+      "" + t + "^{" + e + "}\\ (\\bmod " + n + ") = " + enc
+    );
+    updateClass("enc", enc);
+
+    d = getD(e, totient);
+    updateClass("d", d);
+
+    updateClass("priv-key", "(" + d + "," + n + ")");
+    dec = powerMod(enc, d, totient);
+    updateClass("dmod",
+      "" + t + "^{" + d + "}\\ (\\bmod " + n + ") = " + dec
+    );
+    updateClass("dec", dec)
+
+    decStr = int2str(dec);
+    updateClass("decStr", decStr, "");
   }
 
   pEl.value = 2;
@@ -216,27 +330,27 @@ E.g. it is relatively easy to know that 263 * 373 = 98,099. However, given 98,09
   validateP() && validateQ() && refreshAll();
 </script>
 
-
+    
 
 
   </div>
-
+  
 
             </section>
 <footer id="footer">
     <ul class="icons">
-
+        
     </ul>
     <ul class="copyright">
-
+        
         <li>© Untitled. All rights reserved.</li>
-
-
+        
+        
         <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
-
-
+        
+        
         <li>Hugo Port: <a href="https://nelsonroberto.com/">Nelson/Roberto</a></li>
-
+        
     </ul>
 </footer>
 
