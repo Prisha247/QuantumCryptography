@@ -63,12 +63,13 @@ Solve to decrypt the text using $d$: <span class="dmod">\_\_</span>
 
 <span class="dec">\_\_</span> is the decryption, which can be converted into <span class="decStr">\_\_</span>.
 
-  ### How Can Factoring Break the Algorithm?
+Note that if the encrypted and decrypted text aren't the same, it's likely that $p$ and $q$ are too small to encode the information you've sent. There are only $N$ possible values of anything $\\bmod N$, so if the encoded message (as a number) is larger than $N$, it can't be accurately encrypted.
 
-  The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
+### How Can Factoring Break the Algorithm?
+
+The security of cryptography relies on certain "hard" problems. These problems are calculations that are simple to do with the right cryptographic key, but extremely difficult to do without it. A "hard" problem should take the best computers available billions of years to solve; an "easy" problem is one that can be solved very quickly.
 
 RSA is currently an example of a “hard” problem, because it relies on integer factorization. A user starts with a message and performs arithmetic on it that involves multiplication by a very large number (hundreds of digits long). The only way to decode the message is to find the prime factors of the resulting product. The security of RSA encryption rests on the fact that there’s no fast way to identify the prime factors of very large numbers. If you’re not the intended recipient of a message — and if you therefore lack the right key to decode it — you could search for a thousand years with the best computers and still not find the right prime factors.
-
 
 
 ### Future Steps
