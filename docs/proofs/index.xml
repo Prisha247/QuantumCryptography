@@ -12,7 +12,9 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/proofs/bib/</guid>
-      <description>Additional Resources + Bibliography </description>
+      <description>Additional Resources + Bibliography “Calculate d from n, e, p, q in RSA?” Stack Overflow, stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa. (This JavaScript code helps calculate the modular inverse using an iterative algorithm for the RSA algorithm.)
+“Calculate Modular Exponentiation (PowerMod) in Javascript (a^p % n).” Syed Umar Anis, 13 July 2018, umaranis.com/2018/07/12/calculate-modular-exponentiation-powermod-in-javascript-ap-n/. (This helped with modular exponentiation without access to big numbers in JavaScript.)
+“Check a Number Is Prime or Not Using JavaScript.” GeeksforGeeks, 15 July 2019, www.</description>
     </item>
     
     <item>
