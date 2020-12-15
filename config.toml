@@ -56,7 +56,7 @@ publishDir = "docs"
 
   [[menu.main]]
     identifier = "general"
-    name = "Cryptography"
+    name = "Introduction"
     url = "/general/"
     weight = 10
 

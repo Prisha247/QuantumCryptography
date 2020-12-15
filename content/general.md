@@ -1,5 +1,5 @@
 ---
-  title: "An Intro to Cryptography"
+  title: "An Introduction to Cryptography"
   content: "What is Cryptography? How Does RSA Play Into It?"
 ---
 
