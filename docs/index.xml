@@ -132,8 +132,7 @@ Corollary Dividing both sides by $a$ produces this corollary. Both this form and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/about/</guid>
-      <description>Prisha, Andrew, and Rishita are students at Olin College of Engineering. They created this website as part of their final project in Discrete Mathematics. Please feel free to reach out with any questions/comments/suggestions!
-          </description>
+      <description>Prisha, Andrew, and Rishita are students at Olin College of Engineering. They created this website as part of their final project in Discrete Mathematics. Please feel free to reach out with any questions/comments/suggestions!</description>
     </item>
     
     <item>
@@ -142,7 +141,7 @@ Corollary Dividing both sides by $a$ produces this corollary. Both this form and
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/quantum/</guid>
-      <description>What is Quantum Computing? “Quantum computing” is computation performed using a computing device based on the physical properties of matter at very small scale, also known as quantum mechanics
+      <description>What is Quantum Computing? “Quantum computing” is performed using a device based on the physical properties of matter at the atomic level, also known as quantum mechanics.
 Classical computers, like the ones we use today, function based on transistors that encode data in binary digits, also known as bits, that can only be a “1” or a “0”. Quantum computers, however, use “qubits,” where a single qubit is able to encode many more than two states.</description>
     </item>
     
