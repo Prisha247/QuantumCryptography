@@ -28,16 +28,16 @@ features:
       - title: "Quantum Computing"
         icon: "fa-laptop"
         accent: "accent3" #accent values are 1-8
-        content: "Factoring can lead to a breakdown of the RSA Algorithm, risking malicious attacks on our information on the internet. The process of factoring is much faster on quatum computers than the current classical computers."
+        content: "Factoring can lead to a breakdown of the RSA Algorithm, risking malicious attacks on our information on the internet. The process of factoring is much faster on quantum computers than the current classical computers."
     - items:
         - title: "Mathematical Theorems and Proofs"
           icon: "fa-plus"
           accent: "accent3" #accent values are 1-8
-          content: "The RSA Algorithm relies on several mathematical concepts which are discussed in further details on the following pages."
+          content: "The RSA Algorithm relies on several mathematical concepts which are discussed in further detail on the following pages."
         - title: "Meet the Team"
           icon: "fa-users"
           accent: "accent3" #accent values are 1-8
-          content: "Prisha, Rishita, and Andrew are sophomores at Olin College with an affinity towards math. Please feel to free to contact the team to learn more about quantum cryptography."
+          content: "Prisha, Rishita, and Andrew are sophomores at Olin College with an affinity towards math. Feel free to contact the team to learn more about quantum cryptography."
 ### Blog ###
 blog:
   enable: true

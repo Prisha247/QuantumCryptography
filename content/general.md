@@ -10,7 +10,7 @@ Cryptography refers to the process of securing communication in the presence of 
 
  Say Alice wants to send an important message to her friend, Bob. Under normal circumstances, sending this message wouldn't be a problem, but they recently realized that their other friend, Eve, wants to learn what they're talking about. They want to make sure that Eve can’t decipher it, so they must share the message using a secret language. Alice may hide her message which can only be accessed by a private key owned by Bob. This way, since Eve doesn’t have a private key, Eve won’t be able to understand the message.
 
-This technology of sharing secret messages is used worldwide to ensure safe interactions on the internet. Today, Advanced Encryption Standard (AES) is used to decrypt messages. With brute force, it would take trillions of years to break the encryption.
+This technology of sharing secret messages is used worldwide to ensure safe interactions on the internet. Today, Advanced Encryption Standard (AES) is used to encrypt messages. With brute force, it would take trillions of years to break the encryption.
 
 
 ### What is RSA and How Does it Work?
