@@ -6,7 +6,7 @@ banner:
   content: "A Study into RSA and its Breakability"
   buttons:
     - title: "Get Started"
-      link: "rsamath/"
+      link: "general/"
     - title: "About Us"
       link: "about/"
 
