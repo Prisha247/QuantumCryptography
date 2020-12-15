@@ -36,3 +36,4 @@ misterwootube. “The RSA Encryption Algorithm (1 of 2: Computing an Example).�
 
 “The Chinese Remainder Theorem Made Easy.” YouTube, YouTube, 8 Oct. 2013, www.youtube.com/watch?v=ru7mWZJlRQg. (Used to understand Chinese Remainder Theorem - helpful in writing our own version of CRT)
 
+Working, Russell. “Strunk and White: Parentheses and Misused Phrases.” Ragan Communications, 26 July 2019, www.ragan.com/strunk-and-white-parentheses-and-misused-phrases/. (Used for Theorem Background Image)
