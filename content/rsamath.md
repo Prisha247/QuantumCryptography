@@ -31,7 +31,7 @@ The encrpytion key is $(e, N)$ and the decryption key is $(d, N)$.
   <div class="row gtr-uniform">
     <div class="col-12 col-12-xsmall">
       Enter Encryption Letter
-      <input type="text" name="Enter Encryption Letter" onchange="refreshAll()" id="rsa-t" value="B" placeholder="Encryption Letter" />
+      <input type="text" name="Enter Encryption Letter" onchange="refreshAll()" id="rsa-t" value="A" placeholder="Encryption Letter" />
     </div>
   </div>
 </form>
