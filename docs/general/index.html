@@ -4,7 +4,7 @@
 
 
 
-<title>Form | RSA Analysis</title>
+<title>An Introduction to Cryptography | RSA Analysis</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/QuantumCryptography/style.css" />
@@ -36,76 +36,22 @@
 </header>
 <section id="main" class="container ">
   <header>
-    <h2>Form</h2>
+    <h2>An Introduction to Cryptography</h2>
     
   </header>
   <div class="box">
     
-    <h3 id="hahahugoshortcode-s0-hbhb">Form</h3>
-<form method="post" action="#">
-	<div class="row gtr-uniform">
-		<div class="col-6 col-12-xsmall">
-			<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-		</div>
-		<div class="col-6 col-12-xsmall">
-			<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-		</div>
-		
-		<div class="col-12">
-			<select name="demo-category" id="demo-category">
-				<option value="">- Category -</option>
-				<option value="1">Manufacturing</option>
-				<option value="1">Shipping</option>
-				<option value="1">Administration</option>
-				<option value="1">Human Resources</option>
-			</select>
-		</div>
-		
-		<div class="col-4 col-12-small">
-			<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-			<label for="demo-priority-low">Low</label>
-		</div>
-		<div class="col-4 col-12-small">
-			<input type="radio" id="demo-priority-normal" name="demo-priority">
-			<label for="demo-priority-normal">Normal</label>
-		</div>
-		<div class="col-4 col-12-small">
-			<input type="radio" id="demo-priority-high" name="demo-priority">
-			<label for="demo-priority-high">High</label>
-		</div>
-		
-		<div class="col-6 col-12-small">
-			<input type="checkbox" id="demo-copy" name="demo-copy">
-			<label for="demo-copy">Email me a copy</label>
-		</div>
-		<div class="col-6 col-12-small">
-			<input type="checkbox" id="demo-human" name="demo-human" checked>
-			<label for="demo-human">I am a human</label>
-		</div>
-		
-		<div class="col-12">
-			<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-		</div>
-		
-		<div class="col-12">
-			<ul class="actions">
-				<li><input type="submit" value="Send Message" class="primary" /></li>
-				<li><input type="reset" value="Reset" /></li>
-			</ul>
-		</div>
-	</div>
-</form>
-<hr>
-<form method="post" action="#">
-  <div class="row gtr-uniform gtr-50">
-    <div class="col-9 col-12-mobilep">
-      <input type="text" name="query" id="query" value="" placeholder="Query" />
-    </div>
-    <div class="col-3 col-12-mobilep">
-      <input type="submit" value="Search" class="fit" />
-    </div>
-  </div>
-</form>
+    <h3 id="what-is-cryptography">What is Cryptography?</h3>
+<p>Cryptography refers to the process of securing communication in the presence of third parties.</p>
+<p>Say Alice wants to send an important message to her friend, Bob. Under normal circumstances, sending this message wouldn&rsquo;t be a problem, but they recently realized that their other friend, Eve, wants to learn what they&rsquo;re talking about. They want to make sure that Eve can’t decipher it, so they must share the message using a secret language. Alice may hide her message which can only be accessed by a private key owned by Bob. This way, since Eve doesn’t have a private key, Eve won’t be able to understand the message.</p>
+<p>This technology of sharing secret messages is used worldwide to ensure safe interactions on the internet. Today, Advanced Encryption Standard (AES) is used to decrypt messages. With brute force, it would take trillions of years to break the encryption.</p>
+<h3 id="what-is-rsa-and-how-does-it-work">What is RSA and How Does it Work?</h3>
+<p>Using RSA encryption, messages are encrypted with a code, known as a public key, which can be shared openly. Once a message has been encrypted with the public key, it can only be decrypted by another key, known as the private key, which must be kept secret.</p>
+<p>So, how does RSA actually work?</p>
+<p>First, two entities each need to set up their own key pairs and share the public key with one another. The two must keep their private keys secret in order for their communications to remain secure.
+Once the first sender has the public key of the recipient of their message, they can use it to encrypt the data that they want to keep secure. Once their data has been encrypted by the public key, it can only be decrypted by the private key from the same key pair.</p>
+<p>When the recipient receives the encrypted message, they use their private key to access the data. If the recipient wants to return some type of communication in a secure way, they can then encrypt their message with the public key of the party they are communicating with. Again, once it has been encrypted with the public key, the only way that the information can be accessed is through the matching private key.</p>
+<p>In this way, RSA encryption can be used by previously unknown parties to securely send data between themselves. Significant parts of the communication channels that we use in our online lives were built up from this foundation.</p>
 
     
 

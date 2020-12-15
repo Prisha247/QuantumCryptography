@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/lists/</guid>
-      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions PrimaryDefaultAlt SmallSmallSmall PrimaryDefaultAlt PrimarySmall DefaultSmall </description>
+      <description>Lists Unordered  Dolor pulvinar etiam. Sagittis lorem eleifend. Felis feugiat dolore viverra. Dolor pulvinar etiam.  Ordered  Dolor pulvinar etiam. Etiam vel felis at viverra. Felis enim feugiat magna. Etiam vel felis nullam. Felis enim et tempus.  Actions Primary Default Alt  Small Small Small  Primary Default Alt  Primary Small  Default Small  </description>
     </item>
     
     <item>
@@ -30,7 +30,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/buttons/</guid>
-      <description>Buttons PRIMARYDEFAULT LARGEDEFAULTSMALL FITFIT FIT &amp;#43; SMALLFIT &amp;#43; SMALL ICONICON PRIMARYDEFAULT </description>
+      <description>Buttons PRIMARY DEFAULT  LARGE DEFAULT SMALL  FIT FIT  FIT &amp;#43; SMALL FIT &amp;#43; SMALL  ICON ICON  PRIMARY DEFAULT  </description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@
       <guid>https://prisha247.github.io/QuantumCryptography/elements/text/</guid>
       <description>Math Behind The RSA Algorithm this is where we will explain the deeper math behind the algorithm.
 here will be an example of the algorithm in use, possibly with an animation, to make it easier for the viewer to understand.
-How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i didFuture Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
+ How Can Factoring Break the Algorithm? add more description, and pictures, and quotes/equations from the reading i did   Future Steps introduce quantum cryptography, and urge the audience to go to the next page, where we will talk about shor&amp;rsquo;s algorithm.</description>
     </item>
     
     <item>
@@ -50,7 +50,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/form/</guid>
-      <description>Form - Category -ManufacturingShippingAdministrationHuman ResourcesLowNormalHighEmail me a copyI am a human   </description>
+      <description>Form   - Category - Manufacturing Shipping Administration Human Resources   Low  Normal  High  Email me a copy  I am a human               </description>
     </item>
     
     <item>
@@ -59,7 +59,7 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://prisha247.github.io/QuantumCryptography/elements/image/</guid>
-      <description>Image Fit  Gallery  Left &amp;amp; Right Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
+      <description>Image Fit  Gallery         Left &amp;amp; Right  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus.</description>
     </item>
     
     <item>
@@ -71,6 +71,16 @@ here will be an example of the algorithm in use, possibly with an animation, to 
       <description>Additional Resources + Bibliography “Calculate d from n, e, p, q in RSA?” Stack Overflow, stackoverflow.com/questions/23279208/calculate-d-from-n-e-p-q-in-rsa. (This JavaScript code helps calculate the modular inverse using an iterative algorithm for the RSA algorithm.)
 “Calculate Modular Exponentiation (PowerMod) in Javascript (a^p % n).” Syed Umar Anis, 13 July 2018, umaranis.com/2018/07/12/calculate-modular-exponentiation-powermod-in-javascript-ap-n/. (This helped with modular exponentiation without access to big numbers in JavaScript.)
 “Check a Number Is Prime or Not Using JavaScript.” GeeksforGeeks, 15 July 2019, www.</description>
+    </item>
+    
+    <item>
+      <title>An Introduction to Cryptography</title>
+      <link>https://prisha247.github.io/QuantumCryptography/general/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://prisha247.github.io/QuantumCryptography/general/</guid>
+      <description>What is Cryptography? Cryptography refers to the process of securing communication in the presence of third parties.
+Say Alice wants to send an important message to her friend, Bob. Under normal circumstances, sending this message wouldn&amp;rsquo;t be a problem, but they recently realized that their other friend, Eve, wants to learn what they&amp;rsquo;re talking about. They want to make sure that Eve can’t decipher it, so they must share the message using a secret language.</description>
     </item>
     
     <item>
@@ -123,11 +133,11 @@ Corollary Dividing both sides by $a$ produces this corollary. Both this form and
       
       <guid>https://prisha247.github.io/QuantumCryptography/about/</guid>
       <description>Prisha, Andrew, and Rishita are students at Olin College of Engineering. They created this website as part of their final project in Discrete Mathematics. Please feel free to reach out with any questions/comments/suggestions!
- </description>
+          </description>
     </item>
     
     <item>
-      <title>Quantum Computing and the future of RSA</title>
+      <title>Quantum Computing and the Future of RSA</title>
       <link>https://prisha247.github.io/QuantumCryptography/quantum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
